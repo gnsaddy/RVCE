@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="./css/styleCa.css">
+</head>
+<body>
+	<script>
+		
+	function number(value){
+		document.form1.result.value += value;
+	}
+	function cle(value){
+		document.form1.result.value =value;
+	}
+	function evalua(){
+		document.form1.result.value = eval(document.form1.result.value);
+	}
+	function cos() {
+	document.form1.result.value = Math.cos(document.form1.result.value);
+	}
+	function sin() {
+	document.form1.result.value = Math.sin(document.form1.result.value);
+	}
+	function tan() {
+	document.form1.result.value = Math.tan(document.form1.result.value);
+	}
+	function sqrt() {
+			document.form1.result.value = Math.sqrt(document.form1.result.value);
+	}
+	function log() {
+			document.form1.result.value = Math.log(document.form1.result.value);
+	}
+	function exp() {
+			document.form1.result.value = Math.exp(document.form1.result.value);
+	}
+	
+	</script>
+
+	<form name="form1">
+	<table id="tb" align="center">
+	<tr><td colspan="4">SIMPLE CALCULATOR</td></tr>
+		<tr><td colspan="5">
+		<input type = "text" name="result" placeholder="0" disabled style="text-align:right"></input>
+		</td></tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="1">1</button></td>
+		<td><button type = "button" onclick="number(value)" value="2">2</button></td>
+		<td><button type = "button" onclick="number(value)" value="3">3</button></td>
+		<td><button type = "button" onclick="sqrt()" >&radic;</button></td>
+		<td><button type = "button" onclick="number(value)" value="+">+</button></td>
+		</tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="4">4</button></td>
+		<td><button type = "button" onclick="number(value)" value="5">5</button></td>
+		<td><button type = "button" onclick="number(value)" value="6">6</button></td>
+		<td><button type="button" onclick="cos()">cos</button></td>
+		<td><button type = "button" onclick="number(value)" value="-">-</button></td>
+		</tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="7">7</button></td>
+		<td><button type = "button" onclick="number(value)" value="8">8</button></td>
+		<td><button type = "button" onclick="number(value)" value="9">9</button></td>
+		<td><button type = "button" onclick="sin()">sin</button></td>
+		<td><button type = "button" onclick="number(value)" value="/">/</button></td>
+		</tr>
+		<tr>
+		<td><button type = "button" onclick="number(value)" value="."><strong>.</strong></button></td>
+		<td><button type = "button" onclick="number(value)" value="0">0</button></td>
+		<td><button type = "button" onclick="number(value)" value="*">*</button></td>
+		<td><button type="button" onclick="tan()">tan</button></td>
+		<td><button type = "button" onclick="number(value)" value="%">%</button></td>
+		</tr>
+		<tr>
+		<td colspan="2"><button type="button" onclick="log()">ln</button></td>
+		<td colspan="3"><button type="button" onclick="exp()">exp</button></td>
+		
+		</tr>
+		<tr>
+		<td colspan="2">
+		<button type = "button" onclick="cle(value)" value="">C</button></td>
+		<td colspan="3">
+		<button type = "button" onclick="evalua()">=</button>
+		</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

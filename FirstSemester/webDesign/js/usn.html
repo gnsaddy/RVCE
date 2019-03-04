@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn:active{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <pre>Enter USN : <input type="text" id="t1"></pre>
+        <pre><input type="button" value="Validate" id="btn" onclick="validate()"></pre>
+    </form>
+
+    <script>
+        
+        function validate(){
+            var un = document.getElementById('t1');
+            var usn = un.value;
+            var pattern = /^[0-9][A-Z]{2,2}[0-9]{2,2}[A-Z]{3,3}[0-9]{2,2}$/;
+            if (!usn.match(pattern)){
+                alert("Invalid USN");
+                un.style.backgroundColor="red";
+                return false;
+            }
+            else {
+                alert("Valid USN");
+                un.style.backgroundColor="grey";
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

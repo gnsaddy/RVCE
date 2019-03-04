@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <script type="text/javascript" src="./js/validateLogin.js"></script>
+</head>
+<body>
+    <header>
+        <div class="divHeader">
+            <h1><span class="highlight">Login</span> in to Website</h1>
+        </div>
+    </header>
+
+    <div id="login">
+      <form onsubmit="return validate()" action="message.html">
+                <table border="2" id="table">
+                    <thead>
+                        <tr>
+                            <td colspan="3" align=center><b>Welcome Login</b></td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Name </td>
+                        <td><input type="text" id="name" placeholder="Enter name" /></td>
+                        </tr>
+                    <tr>
+                        <td>Email </td>
+                        <td><input type="email" id="email" placeholder="Email"</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password"  id="password" placeholder="password" /> </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" align=center> <button  type="submit" name="Login" value="Login" id="button">Login </button></td>
+                    </tr>
+                </table>
+</form>
+</div>
+</body>
+</html>

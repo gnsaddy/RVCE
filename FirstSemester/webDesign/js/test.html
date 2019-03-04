@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-color: grey;
+            padding: 20px;
+        }
+        .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+    </style>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+  <div class="grid-container">
+  <div class="grid-item">
+  <div id="Page1">
+    Content of page 1
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+  </div>
+
+  </div>
+  <div class="grid-item">
+    <div id="Page2" style="display:none">
+        Content of page 2
+        <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+    </div>
+  </div>
+   
+</div>
+
+</body>
+</html>

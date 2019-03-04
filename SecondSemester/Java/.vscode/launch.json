@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestMethodOverLoad",
+            "request": "launch",
+            "mainClass": "TestMethodOverLoad",
+            "projectName": "Java_707d0ad6"
+        }
+    ]
+}

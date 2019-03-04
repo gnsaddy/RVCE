@@ -1,0 +1,1 @@
+printf("%d", temp->data);
