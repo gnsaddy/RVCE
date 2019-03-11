@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestPackage",
+            "request": "launch",
+            "mainClass": "TestPackage",
+            "projectName": "Java_c33db49b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestMethodOverLoad",
             "request": "launch",
             "mainClass": "TestMethodOverLoad",

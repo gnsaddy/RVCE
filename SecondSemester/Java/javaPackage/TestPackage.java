@@ -1,19 +1,20 @@
-import Area.*;
+import shape.Rectangle;
+import shape.Square;
+import shape.Circle;
 
-class TestPackage{
+
+public class TestPackage{
     public static void main(String[] args) {
-        allArea.AreaOfRectangle rectObj;
-        allArea.AreaOfSquare squareObj;
-        allArea.AreaOfTriangle triangleObj;
+        Rectangle rect = new Rectangle();
+        Square square = new Square();
+        Circle cir = new Circle();
+        System.out.println("Different area shapes");
 
-        // or we can also do like that
-
-        AreaOfReactangle obj1;
-        AreaOfSquare obj2;
-        AreaOfTriangle obj3;
-
-
-        System.out.println("Area of rectangle is : "+ rectObj.rectangle(30,10));
-
+        rect.setArea(10,23);
+        rect.displayArea();
+        square.setArea(12);
+        square.displayArea();
+        cir.setArea(8);
+        cir.displayArea();
     }
 }
