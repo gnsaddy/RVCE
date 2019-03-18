@@ -43,10 +43,24 @@ E.did having count(E.did) >= ALL (select count(did) from Employee group by did);
 
 
 
+-- Additional queries
+-- 1)
 
 
+-- 2)
+
+select distinct did from Employee;
+
+-- 3)
 
 
+-- 4)
+
+select E.did,D.dname,E.ename,avg(E.salary) from Employee as E,Department as D where E.did = D.did group by E.did,E.ename,D.dname;
+
+-- 5)
+
+select E.ename,E.salary,E.salGrade from Employee as E where E.ename = 'Alok';
 
 
 
