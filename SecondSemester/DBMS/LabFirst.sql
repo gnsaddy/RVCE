@@ -52,7 +52,7 @@ E.did having count(E.did) >= ALL (select count(did) from Employee group by did);
 select distinct did from Employee;
 
 -- 3)
-
+select * from Employee where hireDate < ('1991-1-1');
 
 -- 4)
 
@@ -60,11 +60,11 @@ select E.did,D.dname,E.ename,avg(E.salary) from Employee as E,Department as D wh
 
 -- 5)
 
-select E.ename,E.salary,E.salGrade from Employee as E where E.ename = 'Alok';
+ select E.ename,E.salary,E.salGrade from Employee as E where E.ename = 'Alok' and E.salGrade = (select max(salGrade) from Employee);
 
+-- 6)
 
+select did,ename,desig,salary,(salary+commi) as NetSalary from Employee where desig='Analyst' and salary+commi = (select max(salary+commi) from Employee);
 
-
-
-
+-- 7)
 
