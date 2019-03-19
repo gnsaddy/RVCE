@@ -9,3 +9,8 @@ filepermi=$(stat -c '%A' "$FILE2")
 if [ "$fileperm" = "$filepermi" ]; then
         echo $(stat -c '%A' "$fileperm") 
 fi
+
+
+
+        awt += wt[i];
+        atat += tat[i];

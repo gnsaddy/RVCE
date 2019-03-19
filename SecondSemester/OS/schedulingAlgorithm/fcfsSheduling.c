@@ -12,9 +12,8 @@ int main()
         printf("P[%d]:",i+1);
         scanf("%d",&bt[i]);
     }
- 
-    wt[0]=0;    //waiting time for first process is 0
- 
+    wt[0]=0;    //waiting time for first process is 04
+    
     //calculating waiting time
     for(i=1;i<n;i++)
     {
