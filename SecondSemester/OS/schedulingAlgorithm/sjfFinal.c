@@ -3,7 +3,7 @@
 
 int main(){
     int num,pid[20],exeTime[20],at[20],wt=0,ct=0,tat=0,sumWT=0,sumTAT=0;
-    int i,j,temp,idle;
+    int i,j,temp;
     float awt,atat;
 
     printf("\nEnter the number of process : ");
@@ -18,10 +18,6 @@ int main(){
         printf("\nEnter arrival time for process %d : ",i+1);
         scanf("%d",&at[i]);
     }
-
-    printf("\nEnter CPU idle time : ");
-    scanf("%d",&idle);
-
 
 for(int i=0;i<num;i++){
     for(int j=0;j<num;j++){
@@ -43,7 +39,7 @@ for(int i=0;i<num;i++){
 printf("\nPid \t\tAt \t\tBT \t\tCT \t\tWT \t\tTAT");
 
 for (int i=0;i<num;i++){
-    ct += exeTime[i]+idle;
+    ct += exeTime[i];
     tat=ct-at[i];
     wt=tat-exeTime[i];
     sumWT += wt;
