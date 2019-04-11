@@ -1,46 +1,50 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+
+
 int main(){
-    int num,pid[20],i,j,temp;
-    float exeTime[20],ct=0,wt=0,tat=0,sumWT=0,sumTAT=0;
-    float idle,temp1;
-    float awt,atat,at[20];
+    int num,pid[20],at[20],atWithIdle[10],i,j,temp;
+    int exeTime[20],ct=0,wt=0,tat=0,sumWT=0,sumTAT=0;
+    int idle,temp1;
+    float awt,atat;
 
     printf("\nEnter the number of process : ");
     scanf("%d",&num);
 
     for(i=0;i<num;i++){
         printf("\nEnter execution time for process %d : ",i+1);
-        scanf("%f",&exeTime[i]);
+        scanf("%d",&exeTime[i]);
         pid[i]=i+1;
     }
 
     for(i=0;i<num;i++){
         printf("\nEnter arrival time for process %d : ",i+1);
-        scanf("%f",&at[i]);
+        scanf("%d",&at[i]);
     }
-    
-    printf("\nEnter cpu idle time : ");
-    scanf("%f",&idle);
-    printf("\nCPU idle time is :%f \n ",idle);
+     for (i = 0; i < num; i++)
+    {
+        if (at[i] < idle)
+        {
+            atWithIdle[i] = idle;
+        }
+    }
 
 for(int i=0;i<num;i++){
     for(int j=0;j<num;j++){
         if(exeTime[i]<exeTime[j]){
-
             // swap burst time
-            temp1= exeTime[i];
-            exeTime[i]=exeTime[j];
-            exeTime[j]=temp1;
+            swap(&exeTime[i],&exeTime[j]);            
             // swap arrival time
-            temp1=at[j];
-            at[j]=at[i];
-            at[i]=temp1;
+            swap(&at[i],&at[j]);
             // swap position
-            temp = pid[i];
-            pid[i] = pid[j];
-            pid[j] = temp;
+            swap(&pid[i],&pid[j]);
         }
     }
 }
@@ -53,7 +57,7 @@ for (int i=0;i<num;i++){
     wt=tat-exeTime[i];
     sumWT += wt;
     sumTAT += tat;
-    printf("\np%d \t\t %f \t\t %f \t\t %f \t\t %f \t\t %f\n",pid[i],at[i],exeTime[i],ct,wt,tat);
+    printf("\np%d \t\t %d \t\t %d \t\t %d \t\t %d \t\t %d\n",pid[i],at[i],exeTime[i],ct,wt,tat);
 
 }
 
