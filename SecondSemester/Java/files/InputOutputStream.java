@@ -5,7 +5,7 @@ import java.io.File;
 import java.util.*;
 
 class InputOutputStream {
-
+    
     public static void fileDetails(){
         File dir = new File("./.");
         String[] children = dir.list();
