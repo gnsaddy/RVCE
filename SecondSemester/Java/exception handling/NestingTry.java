@@ -8,8 +8,7 @@ class Test3 {
 		 catch(ArithmeticException | ArrayIndexOutOfBoundsException a)  //pipeing of catch statement
 	{
 		System.out.println(a);
-	}
-		 
+	} 
 	int[] y =new int[5];
 		y[10]=20;
 	}
@@ -17,6 +16,5 @@ class Test3 {
 	{
 		System.out.println(a);
 	}
-
-}
+ }
 }

@@ -27,22 +27,16 @@ class TestArray {
 	table[0][2]=5; //pos 3
 	table[1][0]=3; //pos 4
 	table[1][1]=4; //pos 5
-	
 	for(int i=0;i<table.length;i++){ // row length
 		for(int j=0;j<table[i].length;j++){ //col length for specific row
 			System.out.println(table[i][j]);
 		}
-
 	}
-
 	// 2D array
 	int size=5;
-	int[][] a = new int[][]{{1,2,3,4,5},
-							{9,8,7,6,5}};
-	
+	int[][] a = new int[][]{{1,2,3,4,5},{9,8,7,6,5}};
 	
 	for(int i=0;i<size;i++){
-		
 		for(int j=0;j<size;j++){
 			System.out.print(a[i][j]);
 			System.out.print(" ");

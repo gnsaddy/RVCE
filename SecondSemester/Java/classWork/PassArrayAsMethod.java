@@ -4,7 +4,7 @@ public class PassArrayAsMethod{
         for(int i=0;i<ar.length;i++){
             sum=sum+ar[i];
         }
-        System.out.println(sum);
+        System.out.println("Array sum : "+sum);
         
     }
     public static void main(String[] args) {

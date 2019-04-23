@@ -1,5 +1,3 @@
-package BasicAbstract;
-
 abstract class CheckBlocks {
     CheckBlocks(){
         System.out.println("Abstract class constructor");
@@ -11,7 +9,7 @@ abstract class CheckBlocks {
         System.out.println("Static block");
     }
 }
-public class Test4 extends CheckBlocks{
+class Test4 extends CheckBlocks{
     Test4(){
         super();
         System.out.println("Normal class constructor");

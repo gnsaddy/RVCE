@@ -10,7 +10,7 @@ interface It3 extends It2 {
     void m3();
 }
 
-class Test implements It1,It2,It3 {
+class TestInterface implements It1,It2,It3 {
     @Override
     public void m1() {
         System.out.println("M1 method--1");
@@ -25,7 +25,7 @@ class Test implements It1,It2,It3 {
     }
     public static void main(String[] args)
     {
-        Test obj=new Test();
+        TestInterface obj=new TestInterface();
         obj.m1();    obj.m2();    obj.m3();
     }
 }
