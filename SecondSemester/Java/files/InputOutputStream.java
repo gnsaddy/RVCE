@@ -81,17 +81,20 @@ class InputOutputStream {
         int ch;
         Scanner sc = new Scanner(System.in);
         while(true){
-            System.out.println("\n1-Write\n2-Read\n3-Append\n");
+            System.out.println("\n1-Available Files \n2-Write\n3-Read\n4-Append\n");
             System.out.print("Enter choice : \n");
             ch = sc.nextInt();
             switch(ch){
-                case 1:
-                    writeToFile();
+                case 1: 
+                    fileDetails();
                     break;
                 case 2:
-                    readAFile();
+                    writeToFile();
                     break;
                 case 3:
+                    readAFile();
+                    break;
+                case 4:
                     appendToFile();
                     break;
                 default:
