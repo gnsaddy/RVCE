@@ -23,9 +23,15 @@ and sgrade in("B","D");
 -- tutorial third
 -- 1)
 
+select ssn,ename,salary,d.deptid,dname,dloc from Employee e,Department d where e.deptid=d.deptid and
+ designation in('Manager','analyst') and dloc="sydeny"
+ and year(now())- year(doj)>5 and commission is null order by dloc;
+
 
 -- 2)
-select e.* from Employee e where e.sgrade IN("A","C") and e.designation IN ("Analyst","Manager");
+select e.* from Employee e,SalaryGrade s where s.sgrade=e.sgrade and 
+e.sgrade IN("A","C") and e.designation IN ("Analyst","Manager");
+
 -- 3)
 
 -- 4)
