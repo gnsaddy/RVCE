@@ -34,6 +34,4 @@ void main(){
     printf("\nAverage turn around time : %f",atat);
     printf("\nAverage waiting time : %f",awt);
     printf("\n");
-
-
 }
