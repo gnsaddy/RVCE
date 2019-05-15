@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int i, nProcesses, p[10]={1,2,3,4,5,6,7,8,9,10},min,k = 1, btime = 0;
 int bt[10], temp, j, at[10], atWithIdle[10], wt[10], tt[10],ct = 0, sum = 0;
-int idleTime = 0,p[10];
+int idleTime = 0;
 float wavg = 0, tavg = 0, tsum = 0, wsum = 0;
 
 void swap(int *xp, int *yp)
@@ -23,6 +23,26 @@ void take(){
         atWithIdle[i] = at[i];
     }
 }
+
+void res(){
+    ct = at[0];
+    printf("************************");
+    printf("\n RESULT:-");
+    printf("\nPID\t BT\t AT\t CT\t WT\t TAT" ); 
+    for(i=0;i<nProcesses;i++)
+    {
+        ct=ct+bt[i];
+        tt[i]=ct-at[i];
+        tsum=tsum+tt[i];
+         printf("\n p%d\t %d\t %d\t %d\t %d\t %d",p[i],bt[i],at[i],ct,wt[i],tt[i]);
+    }    
+    tavg=(tsum/nProcesses); 
+    wavg = (wsum / nProcesses); 
+    
+    printf("\n\nAVERAGE WAITING TIME : %f", wavg);
+    printf("\nAVERAGE TURN AROUND TIME : %f", tavg);
+}
+
 int futureMethod(){
     printf("Input for Future knowledge\n");
     take();
@@ -91,22 +111,9 @@ int futureMethod(){
         }
         wsum = wsum + wt[i];
     }
-    wavg = (wsum / nProcesses);
-    ct = at[0];
-    printf("************************");
-    printf("\n RESULT:-");
-    printf("\nPID\t BT\t AT\t CT\t WT\t TAT" ); 
-    for(i=0;i<nProcesses;i++)
-    {
-        ct=ct+bt[i];
-        tt[i]=ct-at[i];
-        tsum=tsum+tt[i];
-         printf("\n p%d\t %d\t %d\t %d\t %d\t %d",p[i],bt[i],at[i],ct,wt[i],tt[i]);
-    }    
-    tavg=(tsum/nProcesses);  
     
-    printf("\n\nAVERAGE WAITING TIME : %f", wavg);
-    printf("\nAVERAGE TURN AROUND TIME : %f", tavg);
+    res();  // calling result function
+    
     return 0;
 }
 int sjf(){
@@ -130,6 +137,7 @@ int sjf(){
     Execution time and Arrival Time
     Arrival time <= Execution time
     */    
+    btime = at[0];
     for(j=0;j<nProcesses;j++)
     {
         btime=btime+bt[j];
@@ -152,23 +160,10 @@ int sjf(){
         wt[i]=sum-at[i];
         wsum=wsum+wt[i];
     }
-    
-    wavg=(wsum/nProcesses);
-    printf("************************");
-    printf("\n RESULT:-");
-    printf("\nPID\t BT\t AT\t CT\t WT\t TAT" ); 
-    for(i=0;i<nProcesses;i++)
-    {
-        ct=ct+bt[i];
-        tt[i]=ct-at[i];
-        tsum=tsum+tt[i];
-         printf("\n p%d\t %d\t %d\t %d\t %d\t %d",p[i],bt[i],at[i],ct,wt[i],tt[i]);
-    }    
-    tavg=(tsum/nProcesses);   
-    printf("\n\nAVERAGE WAITING TIME : %f",wavg);
-    printf("\nAVERAGE TURN AROUND TIME : %f",tavg);
+    res();  //calling result function
     return 0;  
 }
+
 void main(){
     printf("SJF & Future knowledge \n");
     int ch;
