@@ -59,7 +59,7 @@ int rrMethod(){
 
 int fcfsMethod(){
     wt[0]=0;  // take var tenp and assign the first index vale of arrival time,this helps to put process into ready queue
-    temp = at[0];
+    temp = at[0];  // this code of section also remove the fcfs overhead or fcfs convey effect
     for(i=1;i<num;i++){
         temp=temp+bt[i-1];
         wt[i]=temp-at[i];
