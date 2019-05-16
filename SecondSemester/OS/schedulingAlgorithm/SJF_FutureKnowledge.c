@@ -86,7 +86,6 @@ int futureMethod(){
     }
     // Loops below takes care of sorting the table according to Burst time, Execution time and Arrival Time
     // Arrival time <= Execution time
-
     // First process execution has to wait till the process arrives in ready queue.
     // This adds to time.
     btime = at[0];  // take var btime and assign the first index vale of arrival time
