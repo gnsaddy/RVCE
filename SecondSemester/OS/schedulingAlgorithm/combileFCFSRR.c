@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-int num,bt[20],at[20],ct=0,wt=0,tat=0,rt[10];;
-int i;
+int num,bt[20],at[20],ct=0,wt[20],tat[20],rt[10];
+int i,temp=0;
 float awt,atat;
 float sumWT,sumTAT;
 
@@ -41,8 +41,8 @@ int rrMethod(){
     { 
       remain--; 
       printf("P[%d]\t|\t%d\t|\t%d\n",i+1,time-at[i],time-at[i]-bt[i]); 
-      wt+=time-at[i]-bt[i]; 
-      tat+=time-at[i]; 
+      wt[i]+=time-at[i]-bt[i]; 
+      tat[i]+=time-at[i]; 
       flag=0; 
     }
     if(i==num-1) 
@@ -52,20 +52,24 @@ int rrMethod(){
     else 
       i=0; 
   } 
-  printf("\nAverage Waiting Time= %f\n",wt*1.0/num); 
-  printf("Avg Turnaround Time = %f",tat*1.0/num); 
-  
+  printf("\nAverage Waiting Time= %f\n",wt[i]*1.0/num); 
+  printf("Avg Turnaround Time = %f",tat[i]*1.0/num); 
   return 0; 
 }
+
 int fcfsMethod(){
-      printf("\nPid \t\t AT \t\t BT \t\t CT \t\t WT \t\t TAT");
+    wt[0]=0;
+    for(i=1;i<num;i++){
+        temp=temp+bt[i-1];
+        wt[i]=temp-at[i];
+        sumWT=sumWT+wt[i];
+    }
+    printf("\nPid \t\t AT \t\t BT \t\t CT \t\t WT \t\t TAT");
     for(i=0;i<num;i++){
         ct += bt[i];
-        tat=ct-at[i];
-        wt=tat-bt[i];
-        sumWT += wt;
-        sumTAT += tat;
-        printf("\n%d \t\t %d \t\t %d \t\t %d \t\t %d \t\t %d\n",i+1,at[i],bt[i],ct,wt,tat);
+        tat[i]=ct-at[i];
+        sumTAT += tat[i];
+        printf("\n%d \t\t %d \t\t %d \t\t %d \t\t %d \t\t %d\n",i+1,at[i],bt[i],ct,wt[i],tat[i]);
     }
     awt = sumWT/num;
     atat = sumTAT/num;
@@ -88,8 +92,8 @@ void main(){
                   break;
             case 2:
                  takeInput();
-                fcfsMethod();
-                break;                
+                 fcfsMethod();
+                break;
+        }
     }
-}
 }

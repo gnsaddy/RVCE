@@ -2,8 +2,8 @@
 #include<stdlib.h>
 
 void main(){
-    int num,exeTime[20],at[20],ct=0,wt=0,tat=0;
-    int i;
+    int num,exeTime[20],at[20],ct=0,wt[20],tat[20];
+    int i,temp=0;
     float awt,atat;
     float sumWT,sumTAT;
 
@@ -19,15 +19,19 @@ void main(){
         printf("\nEnter arival time for process %d : ",i+1);
         scanf("%d",&at[i]);
     }
+    wt[0]=0;
+    for(i=1;i<num;i++){
+        temp=temp+exeTime[i-1];
+        wt[i]=temp-at[i];
+        sumWT=sumWT+wt[i];
+    }
 
     printf("\nPid \t\t AT \t\t BT \t\t CT \t\t WT \t\t TAT");
     for(i=0;i<num;i++){
         ct += exeTime[i];
-        tat=ct-at[i];
-        wt=tat-exeTime[i];
-        sumWT += wt;
-        sumTAT += tat;
-        printf("\n%d \t\t %d \t\t %d \t\t %d \t\t %d \t\t %d\n",i+1,at[i],exeTime[i],ct,wt,tat);
+        tat[i]=ct-at[i];
+        sumTAT += tat[i];
+        printf("\n%d \t\t %d \t\t %d \t\t %d \t\t %d \t\t %d\n",i+1,at[i],exeTime[i],ct,wt[i],tat[i]);
     }
     awt = sumWT/num;
     atat = sumTAT/num;

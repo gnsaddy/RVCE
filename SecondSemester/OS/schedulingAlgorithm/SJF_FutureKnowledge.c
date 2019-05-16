@@ -69,7 +69,7 @@ int futureMethod(){
             }
             else if ((atWithIdle[i] == atWithIdle[j]) && (bt[i] < bt[j])) // Sort based on burst time for processes with same arrival time
             {
-                 swap(&p[i],&p[j]);
+                swap(&p[i],&p[j]);
                 swap(&at[i],&at[j]);
                 swap(&bt[i],&bt[j]);
                 swap(&atWithIdle[i],&atWithIdle[j]);
