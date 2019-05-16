@@ -105,11 +105,8 @@ int futureMethod(){
             }
         }
         k++;
-    }
-    
-    
-    res();  // calling result function
-    
+    }    
+    res();  // calling result function    
     return 0;
 }
 int sjf(){
