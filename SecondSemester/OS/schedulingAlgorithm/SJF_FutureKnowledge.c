@@ -23,16 +23,24 @@ void take(){
         atWithIdle[i] = at[i];
     }
 }
-
 void res(){
+
+    wt[0] = 0;
+    sum = at[0];  // take var sum and assign the first index vale of arrival time,this helps to put process into ready queue
+    for (i = 1; i < nProcesses; i++)
+    {
+        sum=sum+bt[i-1];
+        wt[i]=sum-at[i];  // calculating waiting time 
+        wsum=wsum+wt[i];
+    }
     ct = at[0];
     printf("************************");
     printf("\n RESULT:-");
     printf("\nPID\t BT\t AT\t CT\t WT\t TAT" ); 
     for(i=0;i<nProcesses;i++)
     {
-        ct=ct+bt[i];
-        tt[i]=ct-at[i];
+        ct=ct+bt[i];  // calculating completion time
+        tt[i]=ct-at[i];  // calculating turn around time
         tsum=tsum+tt[i];
          printf("\n p%d\t %d\t %d\t %d\t %d\t %d",p[i],bt[i],at[i],ct,wt[i],tt[i]);
     }    
@@ -51,7 +59,7 @@ int futureMethod(){
     /*Sort according to Arrival Time*/
     for (i = 0; i < nProcesses; i++)
     {
-        if (at[i] < idleTime)
+        if (at[i] < idleTime)  //check for arrival time is less than idle time if yes assign arrivalWithIdle time equals user idle time
         {
             atWithIdle[i] = idleTime;
         }
@@ -60,19 +68,19 @@ int futureMethod(){
     {
         for (j = 0; j < nProcesses; j++)
         {
-            if (atWithIdle[i] < atWithIdle[j])
+            if (atWithIdle[i] < atWithIdle[j])  // comparing the arrivalWithIdle time
             {
-                swap(&p[i],&p[j]);
-                swap(&at[i],&at[j]);
-                swap(&bt[i],&bt[j]);
-                swap(&atWithIdle[i],&atWithIdle[j]);
+                swap(&p[i],&p[j]);   // swap process id
+                swap(&at[i],&at[j]); //swap arrival time
+                swap(&bt[i],&bt[j]); // swap burst time
+                swap(&atWithIdle[i],&atWithIdle[j]);  // also swap atWithIdle time if (atWithIdle[i] < atWithIdle[j]) true
             }
             else if ((atWithIdle[i] == atWithIdle[j]) && (bt[i] < bt[j])) // Sort based on burst time for processes with same arrival time
             {
-                swap(&p[i],&p[j]);
-                swap(&at[i],&at[j]);
-                swap(&bt[i],&bt[j]);
-                swap(&atWithIdle[i],&atWithIdle[j]);
+                swap(&p[i],&p[j]);  // swap process id
+                swap(&at[i],&at[j]); //swap arrival time
+                swap(&bt[i],&bt[j]); // swap burst time
+                swap(&atWithIdle[i],&atWithIdle[j]);  // swap atWithIdle time
             }
         }
     }
@@ -81,7 +89,7 @@ int futureMethod(){
 
     // First process execution has to wait till the process arrives in ready queue.
     // This adds to time.
-    btime = at[0];
+    btime = at[0];  // take var btime and assign the first index vale of arrival time
     for (j = 0; j < nProcesses; j++)
     {
         btime = btime + bt[j];
@@ -98,19 +106,7 @@ int futureMethod(){
         }
         k++;
     }
-    wt[0] = 0;
-    sum = at[0];
-    for (i = 1; i < nProcesses; i++)
-    {
-        sum = sum + bt[i - 1];
-        wt[i] = sum - at[i];
-
-        if (wt[i] < 0)
-        {
-            wt[i] = 0;
-        }
-        wsum = wsum + wt[i];
-    }
+    
     
     res();  // calling result function
     
@@ -152,13 +148,6 @@ int sjf(){
             }
         }
         k++;
-    }
-    wt[0]=0;
-    for(i=1;i<nProcesses;i++)
-    {
-        sum=sum+bt[i-1];
-        wt[i]=sum-at[i];
-        wsum=wsum+wt[i];
     }
     res();  //calling result function
     return 0;  
