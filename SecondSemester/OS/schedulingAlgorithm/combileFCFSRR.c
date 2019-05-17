@@ -65,6 +65,7 @@ int fcfsMethod(){
         wt[i]=temp-at[i];
         sumWT=sumWT+wt[i];
     }
+    ct=at[0];
     printf("\nPid \t\t AT \t\t BT \t\t CT \t\t WT \t\t TAT");
     for(i=0;i<num;i++){
         ct += bt[i];

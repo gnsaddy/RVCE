@@ -5,13 +5,13 @@ int bt[10], temp, j, at[10], atWithIdle[10], wt[10], tt[10],ct = 0, sum = 0;
 int idleTime = 0;
 float wavg = 0, tavg = 0, tsum = 0, wsum = 0;
 
-void swap(int *xp, int *yp)
+void swap(int *xp, int *yp)  // used for swapping 
 {
     int temp = *xp;
     *xp = *yp;
     *yp = temp;
 }
-void take(){
+void take(){   // used to take input from user
     printf("\nEnter the No. of processes (less than 10) :");
     scanf("%d", &nProcesses);
     for (i = 0; i < nProcesses; i++)
@@ -23,8 +23,7 @@ void take(){
         atWithIdle[i] = at[i];
     }
 }
-void res(){
-
+void res(){   // result calculation
     wt[0] = 0;
     sum = at[0];  // take var sum and assign the first index vale of arrival time,this helps to put process into ready queue
     for (i = 1; i < nProcesses; i++)
@@ -33,7 +32,7 @@ void res(){
         wt[i]=sum-at[i];  // calculating waiting time 
         wsum=wsum+wt[i];
     }
-    ct = at[0];
+    ct = at[0];   // set completion time equals to first index vaue of arrival time
     printf("************************");
     printf("\n RESULT:-");
     printf("\nPID\t BT\t AT\t CT\t WT\t TAT" ); 
@@ -53,8 +52,8 @@ void res(){
 
 int futureMethod(){
     printf("Input for Future knowledge\n");
-    take();
-   printf("\nEnter idle time :");
+    take();  // input method envoked
+    printf("\nEnter idle time :");
     scanf("%d", &idleTime);
     /*Sort according to Arrival Time*/
     for (i = 0; i < nProcesses; i++)
@@ -97,10 +96,10 @@ int futureMethod(){
         {
             if (btime >= atWithIdle[i] && bt[i] < min)
             {
-                swap(&p[i],&p[k]);
-                swap(&at[i],&at[k]);
-                swap(&bt[i],&bt[k]);
-                swap(&atWithIdle[i],&atWithIdle[k]);
+                swap(&p[i],&p[k]);  // swap process id
+                swap(&at[i],&at[k]);  //swap arrival time
+                swap(&bt[i],&bt[k]);  // swap burst time
+                swap(&atWithIdle[i],&atWithIdle[k]);  // swap atWithIdle time
             }
         }
         k++;
@@ -111,7 +110,7 @@ int futureMethod(){
 int sjf(){
     
     printf("Input for SJF\n");
-    take();    
+    take();    // take method envoked
     /*Sorting According to Arrival Time*/    
     for(i=0;i<nProcesses;i++)
     {
@@ -119,9 +118,9 @@ int sjf(){
         {
             if(at[i]<at[j])
             {
-                swap(&p[i],&p[j]);
-                swap(&at[i],&at[j]);
-                swap(&bt[i],&bt[j]);
+                swap(&p[i],&p[j]);  // swap process id
+                swap(&at[i],&at[j]); // swap arrival time
+                swap(&bt[i],&bt[j]); // swap burst time
             }
         }
     }    
@@ -129,7 +128,7 @@ int sjf(){
     Execution time and Arrival Time
     Arrival time <= Execution time
     */    
-    btime = at[0];
+    btime = at[0];  // take var btime and assign the first index vale of arrival time
     for(j=0;j<nProcesses;j++)
     {
         btime=btime+bt[j];
@@ -138,9 +137,9 @@ int sjf(){
         {
             if (btime>=at[i] && bt[i]<min)
             {
-                swap(&p[i],&p[k]);
-                swap(&at[i],&at[k]);
-                swap(&bt[i],&bt[k]);
+                swap(&p[i],&p[k]);  // swap process id
+                swap(&at[i],&at[k]); // swap arrival time
+                swap(&bt[i],&bt[k]); // swap burst time
             }
         }
         k++;
@@ -153,7 +152,7 @@ void main(){
     printf("SJF & Future knowledge \n");
     int ch;
     while(1){
-        printf("1-SJF\n2-Future\n");
+        printf("\n1-SJF\n2-Future\n");
         printf("Enter choice : ");
         scanf("%d",&ch);
         switch (ch)
