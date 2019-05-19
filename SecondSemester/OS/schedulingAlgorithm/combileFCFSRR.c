@@ -5,7 +5,7 @@ int i,temp=0;
 float awt,atat;
 float sumWT,sumTAT;
 
-void takeInput(){
+void takeInput(){  // input taking
     printf("\nEnter the number of process : ");
     scanf("%d",&num);
 
