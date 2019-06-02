@@ -19,6 +19,7 @@ void takeInput(){  // input taking
 }
 int rrMethod(){
     int count,j,time,remain,flag=0,time_quantum; 
+    float avgtt=0,avgwt=0;
     remain=num;  
 
     printf("Enter Time Quantum:\t"); 
@@ -45,6 +46,8 @@ int rrMethod(){
       tat[i]+=time-at[i]; 
       flag=0; 
     }
+    avgwt+=wt[i];
+    avgtt+=tat[i];
     if(i==num-1) 
       i=0; 
     else if(at[i+1]<=time) 
@@ -52,8 +55,8 @@ int rrMethod(){
     else 
       i=0; 
   } 
-  printf("\nAverage Waiting Time= %f\n",wt[i]*1.0/num); 
-  printf("Avg Turnaround Time = %f",tat[i]*1.0/num); 
+  printf("\nAverage Waiting Time= %f\n",avgwt*1.0/num); 
+  printf("Avg Turnaround Time = %f",avgtt*1.0/num); 
   return 0; 
 }
 
