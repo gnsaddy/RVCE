@@ -1,35 +1,45 @@
-
 #include<stdio.h>
 #include<stdlib.h>
  
-int mutex=1,full=0,empty=3,x=0;
-void producer();
-void consumer();
-int wait(int);
-int signal(int);
+int mutex=1,full=0,empty,x=0;
+	void producer();
+	void consumer();
+	int wait(int);
+	int signal(int);
  
 int main()
 {
-	int n;
-	printf("\n1.Producer\n2.Consumer\n3.Exit");
+	int size;
+	printf("\nEnter size of buffer : ");
+	scanf("%d",&size);
+	empty=size;
+    if(size<=0)
+    {
+    	printf("\nEnter valid buffer size!");
+    	exit(0);
+	}
+	
 	while(1)
 	{
+		int ch;
+		printf("\n1.Producer\n2.Consumer\n3.Exit");
 		printf("\nEnter your choice:");
-		scanf("%d",&n);
-		switch(n)
+		scanf("%d",&ch);
+		switch(ch)
 		{
-			case 1:	if((mutex==1)&&(empty!=0))
+			case 1:	if((mutex==1) && (empty!=0))
 						producer();
 					else
-						printf("Buffer is full!!");
+						printf("\nBuffer is full!!");
 					break;
-			case 2:	if((mutex==1)&&(full!=0))
+			case 2:	if((mutex==1) && (full!=0))
 						consumer();
 					else
-						printf("Buffer is empty!!");
+						printf("\nBuffer is empty!!");
 					break;
 			case 3:
 					exit(0);
+			default:printf("Invalid choice!");  
 					break;
 		}
 	}
@@ -44,7 +54,7 @@ int wait(int s)
  
 int signal(int s)
 {
-	return(++s);
+	return (++s);
 }
  
 void producer()
