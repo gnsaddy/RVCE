@@ -2,7 +2,7 @@
 #include<stdlib.h>
 void main()
 {
-    int f[20], index[20],i, n, j, c, k, ind,count=0,size;
+    int f[20], index[20],i, n, j, c, k, ind,count=0;
     for(i=0;i<20;i++){
         f[i]=0;
     }
@@ -10,15 +10,9 @@ void main()
     scanf("%d",&ind);
     if(f[ind]!=1)
     {
-        printf("\nEnter block size for current file\n");
-        scanf("%d",&size);
         printf("Enter no of blocks needed ");
         printf("and also enter the files for the index %d on the disk : \n", ind);
         scanf("%d",&n);
-        if(n>size){
-            printf("\nBlock count/size exceded!!!!! give less than %d ",size);
-            exit(0);
-        }
     }
     else
     {
