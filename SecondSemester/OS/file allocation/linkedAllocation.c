@@ -2,9 +2,10 @@
 #include<stdlib.h>
 void main()
 {
-    int f[20], index[20],i, n, st, len, j, c, k, ind,count=0,size;
-    for(i=0;i<20;i++)
-    f[i]=0;
+    int f[20], index[20],i, n, j, c, k, ind,count=0,size;
+    for(i=0;i<20;i++){
+        f[i]=0;
+    }
     x:printf("Enter the starting block: ");
     scanf("%d",&ind);
     if(f[ind]!=1)
@@ -26,7 +27,7 @@ void main()
     }
     y: count=0;
     for(i=0;i<n;i++)
-    {
+    {   printf("Enter for block %d : ",i+1);
         scanf("%d", &index[i]);
         if(f[index[i]]==0)
         count++;
@@ -44,8 +45,11 @@ void main()
     }
     else
     {
-        printf("\nFile in the index is already allocated \n");
-        printf("\nEnter another file indexed");
+        if(n>count){
+        printf("\n index is full \n");
+        }else
+            printf("\nFile in the index is already allocated \n");
+        printf("\nEnter another file indexed\n");
         goto y;
     }
     printf("\nDo you want to enter more file(Yes - 1/No - 0)");

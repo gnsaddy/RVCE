@@ -6,7 +6,6 @@
 int fcfs(){
   int queue[100], q_size, head, seek =0, diff;
   float avg;
-  printf("%s\n", "***FCFS Disk Scheduling Algorithm***");
   printf("%s\n", "Enter the size of the queue");
   scanf("%d", &q_size);
   printf("%s\n", "Enter queue elements");
