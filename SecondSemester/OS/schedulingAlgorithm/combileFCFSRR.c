@@ -1,13 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 int num,bt[20],at[20],ct=0,wt[20],tat[20],rt[10];
-int i,temp=0;
-float awt,atat;
+int i,temp=0,j,time,remain,flag=0,time_quantum;
+float awt=0,atat=0;
 float sumWT,sumTAT;
+float avgtt=0,avgwt=0;
 
 void takeInput(){  // input taking
     printf("\nEnter the number of process : ");
     scanf("%d",&num);
+    remain=num; 
 
     for(i=0;i<num;i++){
         printf("\nEnter execution time for process %d : ",i+1);
@@ -18,10 +20,6 @@ void takeInput(){  // input taking
     }
 }
 int rrMethod(){
-    int count,j,time,remain,flag=0,time_quantum; 
-    float avgtt=0,avgwt=0;
-    remain=num;  
-
     printf("Enter Time Quantum:\t"); 
   scanf("%d",&time_quantum); 
   printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n"); 
@@ -42,12 +40,10 @@ int rrMethod(){
     { 
       remain--; 
       printf("P[%d]\t|\t%d\t|\t%d\n",i+1,time-at[i],time-at[i]-bt[i]); 
-      wt[i]+=time-at[i]-bt[i]; 
-      tat[i]+=time-at[i]; 
+      awt+=time-at[i]-bt[i]; 
+      atat+=time-at[i]; 
       flag=0; 
-    }
-    avgwt+=wt[i];
-    avgtt+=tat[i];
+    } 
     if(i==num-1) 
       i=0; 
     else if(at[i+1]<=time) 
@@ -55,9 +51,12 @@ int rrMethod(){
     else 
       i=0; 
   } 
-  printf("\nAverage Waiting Time= %f\n",avgwt*1.0/num); 
-  printf("Avg Turnaround Time = %f",avgtt*1.0/num); 
-  return 0; 
+  printf("\nAverage Waiting Time= %f\n",awt*1.0/num); 
+  printf("Avg Turnaround Time = %f",atat*1.0/num); 
+  printf("\n");
+  
+  return 0;
+
 }
 
 int fcfsMethod(){
@@ -87,7 +86,7 @@ void main(){
     int ch;
     while(1){
         printf("1-RR\n2-FCFS\n");
-        printf("Enter choice : ");
+        printf("\nEnter choice : ");
         scanf("%d",&ch);
         switch (ch)
         {

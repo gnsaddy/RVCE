@@ -34,7 +34,7 @@ void main(){
         printf("\n%d\t\t%d",i+1,processMemory[i]);
 
         if(processMemory[i]>blockSize){
-            printf("\t\tNO\t\t");
+            printf("\t\tNO\t\t----");
         }
         else
         {
