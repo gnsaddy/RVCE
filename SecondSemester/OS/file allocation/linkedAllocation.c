@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+#define max 20
 void main()
 {
-    int f[20], index[20],i, n, j, c, k, ind,count=0;
-    for(i=0;i<20;i++){
+    int f[max], index[max],i, n, j, c, k, ind,count=0;
+    for(i=0;i<max;i++){
         f[i]=0;
     }
     x:printf("Enter the starting block: ");
@@ -13,6 +14,10 @@ void main()
         printf("Enter no of blocks needed ");
         printf("and also enter the files for the index %d on the disk : \n", ind);
         scanf("%d",&n);
+        if(n>=max){
+            printf("\n index is full \n");  
+            exit(0);           
+        }
     }
     else
     {
@@ -39,10 +44,7 @@ void main()
     }
     else
     {
-        if(n>count){
-        printf("\n index is full \n");
-        }else
-            printf("\nFile in the index is already allocated \n");
+        printf("\nFile in the index is already allocated \n");                      
         printf("\nEnter another file indexed\n");
         goto y;
     }
