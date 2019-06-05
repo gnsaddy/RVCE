@@ -21,7 +21,6 @@ int main(){
   for(int i=0; i<q_size; i++){
     scanf("%d", &queue[i]);
   }
-
   queue[q_size] = head; //add RW head into queue
   q_size++;
 
@@ -35,7 +34,6 @@ int main(){
       }
     }
   }
-
   max = queue[q_size-1];
 
   //locate head in the queue
@@ -45,7 +43,6 @@ int main(){
       break;
     }
   }
-
   if(abs(head-LOW) <= abs(head-HIGH)){
 
       for(int j=dloc; j>=0; j--){
@@ -67,11 +64,6 @@ int main(){
           printf("%d --> ",queue[j]);
       }
   }
-  
-
-
-
-
   sum  = head + max;
   printf("\nmovement of total cylinders %d", sum);
 
