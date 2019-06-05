@@ -34,7 +34,7 @@ void main()
     a[j]=req[mini];
     j++;
     cp=req[mini]; // change the current position value to next request
-    req[mini]=999;
+    req[mini]=199;
     } // the request that is processed its value is changed so that it is not processed again
     printf("Sequence is : ");
     printf("%d",cp1);    

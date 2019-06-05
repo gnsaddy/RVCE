@@ -21,6 +21,7 @@ int main(){
   for(int i=0; i<q_size; i++){
     scanf("%d", &queue[i]);
   }
+
   queue[q_size] = head; //add RW head into queue
   q_size++;
 
@@ -34,6 +35,7 @@ int main(){
       }
     }
   }
+
   max = queue[q_size-1];
 
   //locate head in the queue
@@ -43,6 +45,7 @@ int main(){
       break;
     }
   }
+
   if(abs(head-LOW) <= abs(head-HIGH)){
 
       for(int j=dloc; j>=0; j--){
@@ -52,14 +55,12 @@ int main(){
       for(int j=dloc+1; j<q_size; j++){
         printf("%d --> ",queue[j]);
       }
-      }
-      
+      }      
        else {
-
       for(int j=dloc+1; j<q_size; j++){
           printf("%d --> ",queue[j]);
-      }printf("0 -->");
-     
+      }
+      printf("199 -->");     
       for(int j=dloc; j>=0; j--){
           printf("%d --> ",queue[j]);
       }
