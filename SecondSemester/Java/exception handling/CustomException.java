@@ -15,7 +15,7 @@ class CustomException {
 
     public static void main(String args[]) {
         try {
-            validate(13);
+            validate(23);
         } catch (Exception m) {
             System.out.println("Exception occured: " + m);
         }
