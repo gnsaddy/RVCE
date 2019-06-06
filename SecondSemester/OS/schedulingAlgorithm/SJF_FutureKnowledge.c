@@ -7,7 +7,7 @@ float wavg = 0, tavg = 0, tsum = 0, wsum = 0;
 
 void swap(int *xp, int *yp)  // used for swapping 
 {
-    int temp = *xp;
+    temp = *xp;
     *xp = *yp;
     *yp = temp;
 }
