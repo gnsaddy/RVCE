@@ -32,7 +32,7 @@ case $num in
                 echo;;
 3)
         set -- `date`
-        ncal -h|grep $3|sed "s|$3|"*"|"
+        ncal -h|grep $3|sed "s| $3|"*"|"
         echo;;
 4)
         echo "Enter the source file"
