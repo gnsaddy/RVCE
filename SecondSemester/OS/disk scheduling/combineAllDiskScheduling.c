@@ -58,7 +58,7 @@ int sstf(){
     a[j]=req[mini];
     j++;
     cp=req[mini]; // change the current position value to next request
-    req[mini]=199;
+    req[mini]=999;
     } // the request that is processed its value is changed so that it is not processed again
     printf("Sequence is : ");
     printf("%d",cp1);    
