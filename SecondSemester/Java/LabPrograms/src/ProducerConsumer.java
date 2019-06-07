@@ -60,14 +60,14 @@ class Consumer extends Thread{
     }
 
     public void run(){
-        for (int i=0;i<5;i++){
+        for (int i=0;i<5;i++) {
             num = pg1.get();
-            System.out.println("Consumer consumes : "+num);
-        }
-        try{
-            sleep(1000);
-        }catch (InterruptedException e){
-            System.out.println("Exception : "+e);
+            System.out.println("Consumer consumes : " + num);
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Exception : " + e);
+            }
         }
     }
 }
