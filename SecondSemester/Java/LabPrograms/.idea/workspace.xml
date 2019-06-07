@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484d0f1f-e183-4fd8-a8c2-63370c553c09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreadPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThreadPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testString/StringMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ThreadPriority.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="-119">
               <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="e#81#82#0" expanded="true" />
@@ -95,6 +95,15 @@
                 <element signature="e#106#107#0" expanded="true" />
                 <element signature="e#136#137#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/testString/StringMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -141,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/testfiles/FileOperation.java" />
         <option value="$PROJECT_DIR$/src/CustomException.java" />
         <option value="$PROJECT_DIR$/src/ThreadPriority.java" />
+        <option value="$PROJECT_DIR$/src/testString/StringMethods.java" />
       </list>
     </option>
   </component>
@@ -167,6 +177,12 @@
               <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
               <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testString" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
@@ -212,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChangePriority">
+  <component name="RunManager" selected="Application.StringMethods">
     <configuration name="ChangePriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChangePriority" />
       <module name="LabPrograms" />
@@ -233,15 +249,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentUsn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudentUsn" />
+    <configuration name="StringMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testString.StringMethods" />
       <module name="LabPrograms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testString.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPackage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestPackage" />
+    <configuration name="StudentUsn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StudentUsn" />
       <module name="LabPrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -255,19 +277,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestPackage" />
       <item itemvalue="Application.ThreadPriority" />
       <item itemvalue="Application.FileOperation" />
       <item itemvalue="Application.StudentUsn" />
       <item itemvalue="Application.ChangePriority" />
+      <item itemvalue="Application.StringMethods" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringMethods" />
         <item itemvalue="Application.ChangePriority" />
         <item itemvalue="Application.StudentUsn" />
         <item itemvalue="Application.FileOperation" />
         <item itemvalue="Application.ThreadPriority" />
-        <item itemvalue="Application.TestPackage" />
       </list>
     </recent_temporary>
   </component>
@@ -284,15 +306,16 @@
       <workItem from="1559833752973" duration="1363000" />
       <workItem from="1559835169206" duration="69000" />
       <workItem from="1559835285557" duration="3577000" />
-      <workItem from="1559847399266" duration="13460000" />
+      <workItem from="1559847399266" duration="16468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18469000" />
+    <option name="totallyTimeSpent" value="21477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17975831" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -419,6 +442,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ThreadPriority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#81#82#0" expanded="true" />
+            <element signature="e#101#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CustomException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -430,14 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ThreadPriority.java">
+    <entry file="file://$PROJECT_DIR$/src/testString/StringMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#101#102#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
