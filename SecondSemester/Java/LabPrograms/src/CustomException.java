@@ -18,9 +18,6 @@ class StudentUsn {
          else if (name != "1RD18MCA01" || name != "1RD18MCA02"){
              throw new UsnNotFound("Result not found!");
          }
-         else if ("".equals(name)){
-             throw new UsnNotFound("USN format {1RD__MCA__} ");
-         }
      }
 
      public static void main(String[] args) {
