@@ -33,8 +33,10 @@ public class FileOperation {
             fileWriter.write(str);
             fileWriter.close();
             System.out.println("Operation done");
+        } catch (FileNotFoundException e){
+            System.out.println("Exception caught "+e);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception caught "+e);
         }
     }
 
@@ -53,9 +55,9 @@ public class FileOperation {
             }
             fileReader.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("Exception caught "+e);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Exception caught "+e);
         }
     }
 
@@ -67,13 +69,14 @@ public class FileOperation {
             System.out.println("Enter existing file name or enter file name to create file");
             String fileName = sc.nextLine();
             FileWriter fileWriter = new FileWriter(fileName,true);
-            System.out.println("--------------------------------");
-            System.out.println("Enter data ----------------");
+            System.out.println("Enter data --");
             String str = sc.nextLine();
             // byte[] strToByte = str.getBytes();
             fileWriter.write(str);
             fileWriter.close();
-            System.out.println("Operation sucessful");
+            System.out.println("Operation successful");
+        }catch (FileNotFoundException e){
+            System.out.println("Exception caught "+e);
         }catch(IOException e){
             System.out.println("Exception caught "+e);
         }
