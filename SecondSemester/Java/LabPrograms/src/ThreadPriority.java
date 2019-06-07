@@ -42,7 +42,7 @@ public class ThreadPriority extends Thread {
             th3.setPriority(z);
 
         }catch (IllegalArgumentException e){
-            System.out.println("Exception : "+ e);
+            System.out.println("Exception : "+ e + " Priority range '0-10' ");
         }
 
         System.out.println("Priority :");
