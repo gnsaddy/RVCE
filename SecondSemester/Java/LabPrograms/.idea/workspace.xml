@@ -2,100 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484d0f1f-e183-4fd8-a8c2-63370c553c09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testGarbageCollector/GarbageDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testGarbageCollector/GarbageDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testGarbageCollector/IslandOfIsolation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testGarbageCollector/TestRuntimeGc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testabstract/CheckAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LabPrograms/testapplet/TestApplet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabPrograms/testapplet/TestApplet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testapplet/TestApplet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testapplet/TestApplet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../garbage collector/GarbageDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../garbage collector/GarbageDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/12542f26fe1ad619/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/1380099e96f349e6/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/1b5cb252fe6016a9/finalOptimal.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/1b5cb252fe6016a9/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/2004664460d14a91/fcfsNormal.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/2004664460d14a91/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/24cc91ee061119a/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/24cc91ee061119a/readerwriter.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/255c8f51cbf6eef9/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/255c8f51cbf6eef9/program7MFT.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/321241cf6233bbcc/fibSeries.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/321241cf6233bbcc/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/32bb026399cfc971/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/32bb026399cfc971/reader-writer.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/33e8adfe53fee2ad/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/33e8adfe53fee2ad/producerCons.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/35d77ded81bbc657/checkSJF.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/35d77ded81bbc657/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/3a64988c3957d2d9/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/3a64988c3957d2d9/sjfFinal.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/3d8beb698ae90d31/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/3d8beb698ae90d31/optimal.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/42b731fa67684571/fcfsSheduling.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/42b731fa67684571/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/4ca784189bbc7947/combileFCFSRR.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/4ca784189bbc7947/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/4ebac035140e7764/fcfsFinal.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/4ebac035140e7764/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/52bc04299f82ab07/combineSJF&amp;Future.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/52bc04299f82ab07/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/550a69fa13dc5229/mftFinal.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/550a69fa13dc5229/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/558f9e4d5cf9f808/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/558f9e4d5cf9f808/roundRobinScheduling.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/5b5d004263cf338e/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/5b5d004263cf338e/sequentialAllocation.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/704e4cd68d821449/SJF_FutureKnowlw.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/704e4cd68d821449/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/7d7c900c5fbd3348/fcfs.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/7d7c900c5fbd3348/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/7e0b8fda76c5261f/finalScan.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/7e0b8fda76c5261f/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/8539018d5e721c24/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/8539018d5e721c24/sstf.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/9922c92b3756fe2b/allPageReplacement.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/9922c92b3756fe2b/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/9a47c49afe186b47/combineAllDiskScheduling.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/9a47c49afe186b47/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a0736954c6c2e89c/linkedAllocation.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a0736954c6c2e89c/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a82fc191729bd497/combineAll.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a82fc191729bd497/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a866448804632d9e/Test.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a866448804632d9e/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a95507652d88988a/lru.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/a95507652d88988a/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/af7a84eb0b3f976b/fcfsWithAT.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/af7a84eb0b3f976b/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/b454344c4e9f0605/FjfFutureKnowledge.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/b454344c4e9f0605/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/b53dacbd1b71ef4d/futureKnowledge.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/b53dacbd1b71ef4d/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/c20f299422960017/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/c20f299422960017/program6ProducerConsumer.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/c61eb480dee86e0a/SJFfuture.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/c61eb480dee86e0a/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/c82f0f7f001db085/mft.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/c82f0f7f001db085/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/cf0a7e9c6ae5f8b8/combineSJF.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/cf0a7e9c6ae5f8b8/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/d1989cae419417c9/fscan.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/d1989cae419417c9/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/d822efa90db0ebb3/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/d822efa90db0ebb3/testCopy.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/dd897bb153b2f90b/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/dd897bb153b2f90b/sjfScheduling.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/de7f992147705437/SJF_FutureKnowledge.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/de7f992147705437/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/f7177defed3241f5/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/f7177defed3241f5/testSJF.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/fcb281cea2b92e5d/fifo.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/ipch/fcb281cea2b92e5d/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/disk scheduling/combineAllDiskScheduling" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/disk scheduling/combineAllDiskScheduling" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/schedulingAlgorithm/SJF_FutureKnowledge" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/schedulingAlgorithm/SJF_FutureKnowledge" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OS/tempCodeRunnerFile.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/tempCodeRunnerFile.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LabPrograms/testGarbageCollector/TestRuntimeGc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LabPrograms/testGarbageCollector/TestRuntimeGc.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,18 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestPackage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ThreadPriority.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testabstract/CheckAbstract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#152#153#0" expanded="true" />
                 <element signature="e#271#272#0" expanded="true" />
@@ -176,11 +73,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testGarbageCollector/GarbageDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="e#179#180#0" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
@@ -212,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testGarbageCollector/TestRuntimeGc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="272">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -253,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/testGarbageCollector/GarbageDemo1.java" />
         <option value="$PROJECT_DIR$/src/testGarbageCollector/IslandOfIsolation.java" />
         <option value="$PROJECT_DIR$/src/testGarbageCollector/TestRuntimeGc.java" />
+        <option value="$PROJECT_DIR$/src/Tester.java" />
       </list>
     </option>
   </component>
@@ -281,12 +188,6 @@
               <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
               <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testGarbageCollector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
@@ -324,20 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestRuntimeGc">
-    <configuration name="GarbageDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testGarbageCollector.GarbageDemo" />
-      <module name="LabPrograms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testGarbageCollector.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Tester">
     <configuration name="GarbageDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testGarbageCollector.GarbageDemo1" />
       <module name="LabPrograms" />
@@ -365,6 +253,7 @@
       </method>
     </configuration>
     <configuration name="TestAbstract" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="MAIN_CLASS_NAME" value="testabstract.TestAbstract" />
       <module name="LabPrograms" />
       <extension name="coverage">
@@ -378,6 +267,8 @@
       </method>
     </configuration>
     <configuration name="TestRuntimeGc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="testGarbageCollector.TestRuntimeGc" />
       <module name="LabPrograms" />
       <extension name="coverage">
@@ -390,20 +281,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tester" />
+      <module name="LabPrograms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.TestAbstract" />
-      <item itemvalue="Application.GarbageDemo" />
       <item itemvalue="Application.GarbageDemo1" />
       <item itemvalue="Application.IslandOfIsolation" />
       <item itemvalue="Application.TestRuntimeGc" />
+      <item itemvalue="Application.Tester" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tester" />
+        <item itemvalue="Application.TestAbstract" />
         <item itemvalue="Application.TestRuntimeGc" />
         <item itemvalue="Application.IslandOfIsolation" />
         <item itemvalue="Application.GarbageDemo1" />
-        <item itemvalue="Application.GarbageDemo" />
-        <item itemvalue="Application.TestAbstract" />
       </list>
     </recent_temporary>
   </component>
@@ -422,12 +320,12 @@
       <workItem from="1559835285557" duration="3577000" />
       <workItem from="1559847399266" duration="18497000" />
       <workItem from="1560074638922" duration="739000" />
-      <workItem from="1561009660792" duration="7367000" />
+      <workItem from="1561009660792" duration="9142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31612000" />
+    <option name="totallyTimeSpent" value="33387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -442,7 +340,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3686636" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3686636" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -584,24 +482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testabstract/CheckAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/testGarbageCollector/GarbageDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="e#179#180#0" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
@@ -630,8 +514,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testGarbageCollector/TestRuntimeGc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testabstract/CheckAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -675,7 +580,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>java11</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
