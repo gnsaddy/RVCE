@@ -5,7 +5,7 @@ class GarbageDemo1 {
 	public void finalize() throws Throwable {
      System.out.println("object delete ");
 	}
-	 void show() {
+	void show() {
 		GarbageDemo1 obj = new GarbageDemo1();
 	}
 	static void get() {
@@ -14,11 +14,10 @@ class GarbageDemo1 {
 	}
 	public static void main(String[] args)
 	{ 
-	for(int i = 1;i<2000;i++)
-	{
-		
-	new get();
-	System.gc();
+		for(int i = 1;i<2;i++)
+		{		
+			get(); // static call
+			System.gc();
+		}
 	}
-	}
-	}
+}

@@ -1,10 +1,9 @@
 package testapplet;
-
+import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.applet.*;
 /*
-<applet code="Key" width=300 height=400>
+<applet code="TestApplet" width=300 height=400>
 </applet>
 */
 public class TestApplet extends Applet implements KeyListener
