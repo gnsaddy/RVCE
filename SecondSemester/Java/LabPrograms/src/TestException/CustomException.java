@@ -1,3 +1,5 @@
+package TestException;
+
 import java.util.Scanner;
 
 class UsnNotFound extends Exception {

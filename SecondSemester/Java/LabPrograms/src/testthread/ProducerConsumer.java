@@ -1,6 +1,8 @@
+package testthread;
+
 class PutGet{
     public int number;
-    public boolean status = false;
+    public boolean status = false; //mutex
 
     public synchronized void put(int i){
         while (status == true){
@@ -28,7 +30,6 @@ class PutGet{
         return number;
     }
 }
-
 class Producer extends Thread{
     PutGet pg;
     int num;
@@ -37,11 +38,10 @@ class Producer extends Thread{
         this.pg = pg;
         this.num = num;
     }
-
     public void run(){
         for (int i=0;i<5;i++){
             pg.put(i);
-            System.out.println("Producer produces : "+i);
+            System.out.println("testthread.Producer produces : "+i);
             try{
                 sleep(1000);
             }catch (InterruptedException e){
@@ -50,11 +50,9 @@ class Producer extends Thread{
         }
     }
 }
-
 class Consumer extends Thread{
     PutGet pg1;
     int num;
-
     Consumer(PutGet pg1){
         this.pg1 = pg1;
     }
@@ -62,7 +60,7 @@ class Consumer extends Thread{
     public void run(){
         for (int i=0;i<5;i++) {
             num = pg1.get();
-            System.out.println("Consumer consumes : " + num);
+            System.out.println("testthread.Consumer consumes : " + num);
             try {
                 sleep(1000);
             } catch (InterruptedException e) {
@@ -71,7 +69,6 @@ class Consumer extends Thread{
         }
     }
 }
-
 public class ProducerConsumer {
     public static void main(String[] args) {
         PutGet putGet = new PutGet();

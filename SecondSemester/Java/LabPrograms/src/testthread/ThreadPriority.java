@@ -1,3 +1,5 @@
+package testthread;
+
 import java.util.Scanner;
 
 public class ThreadPriority extends Thread {

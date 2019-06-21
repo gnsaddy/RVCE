@@ -5,11 +5,13 @@ class GarbageDemo {
     int x=10;
     int y=20;
 
-    public void finalize() {
+
+    protected void finalize() {
         System.out.println("object delete ");
     }
     static void show() {
         GarbageDemo obj = new GarbageDemo();
+
     }
     static void get() {
         GarbageDemo obj1 = new GarbageDemo();
