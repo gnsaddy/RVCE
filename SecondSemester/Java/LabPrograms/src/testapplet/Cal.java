@@ -8,8 +8,7 @@ import java.applet.*;
 </applet>
 */
 
-public class Cal extends Applet
-        implements ActionListener
+public class Cal extends Applet implements ActionListener
 {
     String msg=" ";
     int v1,v2,result;

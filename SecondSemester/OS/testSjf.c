@@ -56,8 +56,6 @@ void sjf()
 			ct[i]+=bt[j];
 		tat[i]=ct[i]-at[i];
 		wt[i]=tat[i]-bt[i];
-		if(wt[i]<0)
-			wt[i]*=-1;
 		atat+=tat[i];
 		awt+=wt[i];
 		printf("%d\t\t\t%d\t\t%d\t\t%d\t\t%d\n",p[i],at[i],bt[i],tat[i],wt[i]);
@@ -101,8 +99,6 @@ void futurek()
 		tat[i]=ct[i]-at[i];
 		wt[i]=tat[i]-bt[i];
 		it2+=bt[i];
-		if(wt[i]<0)
-			wt[i]*=-1;
 		atat+=tat[i];
 		awt+=wt[i];
 		printf("%d\t\t\t%d\t\t%d\t\t%d\t\t%d\n",p[i],at[i],bt[i],tat[i],wt[i]);

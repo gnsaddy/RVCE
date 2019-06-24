@@ -1,13 +1,13 @@
 #include <stdio.h> 
 #include <stdlib.h> // For exit() 
 
-int main(int argc,char *argv[])
-{
+int main(int argc,char *argv[]){
+    
     FILE *fs,*ft;
     int ch;
     if(argc!=3)
     {
-        printf("Invalide numbers of arguments.");
+        printf("Invalid numbers of arguments.");
         return 1;
         }
 

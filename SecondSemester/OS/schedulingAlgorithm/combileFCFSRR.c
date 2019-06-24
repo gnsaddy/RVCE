@@ -3,10 +3,9 @@
 
 int num,bt[20],at[20],ct=0,wt[20],tat[20],rt[10];
 int i,temp=0,j,time,remain,flag=0,time_quantum;
-float awt=0,atat=0;
-float sumWT,sumTAT;
 
 void takeInput(){  // input taking
+    
     printf("\nEnter the number of process : ");
     scanf("%d",&num);
     remain=num; 
@@ -19,10 +18,12 @@ void takeInput(){  // input taking
         rt[i]=bt[i]; 
     }
 }
+
 int rrMethod(){
-    printf("Enter Time Quantum:\t"); 
+  float ratat=0,rawt=0;
+  printf("Enter Time Quantum:\t"); 
   scanf("%d",&time_quantum); 
-  printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n"); 
+  printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n");
   for(time=0,i=0;remain!=0;) 
   { 
     if(rt[i]<=time_quantum && rt[i]>0) 
@@ -33,15 +34,15 @@ int rrMethod(){
     } 
     else if(rt[i]>0) 
     { 
-      rt[i]-=time_quantum; 
-      time+=time_quantum; 
+      rt[i] = rt[i] - time_quantum; 
+      time += time_quantum; 
     } 
     if(rt[i]==0 && flag==1) 
     { 
       remain--; 
       printf("P[%d]\t|\t%d\t|\t%d\n",i+1,time-at[i],time-at[i]-bt[i]); 
-      awt+=time-at[i]-bt[i]; 
-      atat+=time-at[i]; 
+      rawt+=time-at[i]-bt[i]; 
+      ratat+=time-at[i]; 
       flag=0; 
     } 
     if(i==num-1) 
@@ -51,8 +52,8 @@ int rrMethod(){
     else 
       i=0; 
   } 
-  printf("\nAverage Waiting Time= %f\n",awt*1.0/num); 
-  printf("Avg Turnaround Time = %f",atat*1.0/num); 
+  printf("\nAverage Waiting Time= %f\n",(rawt/num)); 
+  printf("Avg Turnaround Time = %f",(ratat/num)); 
   printf("\n");
   
   return 0;
@@ -60,6 +61,8 @@ int rrMethod(){
 }
 
 int fcfsMethod(){
+   float awt=0,atat=0;
+    float sumWT,sumTAT;
     wt[0]=0;  // take var tenp and assign the first index vale of arrival time,this helps to put process into ready queue
     temp = at[0];  // this code of section also remove the fcfs overhead or fcfs convey effect
     for(i=1;i<num;i++){

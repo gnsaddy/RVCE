@@ -12,5 +12,4 @@ fi
 
 
 
-        awt += wt[i];
-        atat += tat[i];
+        

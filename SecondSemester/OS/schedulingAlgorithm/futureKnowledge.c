@@ -11,6 +11,7 @@ int main()
 {
     int i, nProcesses, processes[10]={1,2,3,4,5,6,7,8,9,10},min, k = 1, btime = 0;
     int bt[10], temp, j, at[10], atWithIdle[10], wt[10], tt[10], ta = 0, sum = 0;
+    int ct=0;
     int idleTime = 0;
     float wavg = 0, tavg = 0, tsum = 0, wsum = 0;
     printf(" -------Shortest Job First Scheduling ( NP )-------\n");
@@ -75,36 +76,24 @@ int main()
             }
         }
         k++;
-    }
-    wt[0] = 0;
-    sum = at[0];
-    for (i = 1; i < nProcesses; i++)
-    {
-        sum = sum + bt[i - 1];
-        wt[i] = sum - at[i];
-
-        if (wt[i] < 0)
-        {
-            wt[i] = 0;
-        }
-        wsum = wsum + wt[i];
-    }
-    wavg = (wsum / nProcesses);
+    }   
     ta = at[0];
+    ct = atWithIdle[0];
+    printf("************************");
+    printf("\n RESULT:-");
+    printf("\nProcess\t\t Burst\t\t Arrival\t\tCT\t\t Waiting\t\t Turn-around");
     for (i = 0; i < nProcesses; i++)
     {
         ta = ta + bt[i];
-        tt[i] = ta - at[i];
+        ct= ct + bt[i];
+        tt[i] = ct - at[i];
+        wt[i]=tt[i]-bt[i];
         tsum = tsum + tt[i];
+        wsum=wsum+wt[i];
+        printf("\nProcess %d\t\t %d\t\t %d\t\t%d\t\t %d\t\t\t%d", processes[i], bt[i], at[i],ct, wt[i], tt[i]);
     }
+    wavg = (wsum / nProcesses);
     tavg = (tsum / nProcesses);
-    printf("************************");
-    printf("\n RESULT:-");
-    printf("\nProcess\t\t Burst\t\t Arrival\t\t Waiting\t\t Turn-around");
-    for (i = 0; i < nProcesses; i++)
-    {
-        printf("\nProcess %d\t\t %d\t\t %d\t\t %d\t\t\t%d", processes[i], bt[i], at[i], wt[i], tt[i]);
-    }
     printf("\n\nAVERAGE WAITING TIME : %f", wavg);
     printf("\nAVERAGE TURN AROUND TIME : %f", tavg);
     return 0;

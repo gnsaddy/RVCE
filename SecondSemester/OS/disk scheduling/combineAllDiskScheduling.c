@@ -39,26 +39,26 @@ int sstf(){
         scanf("%d",&req[i]);
     }
     for(k=0;k<n;k++){
-    for(i=0;i<n;i++)
-    {
-        index[i]=abs(cp-req[i]); // calculate distance of each request from current position
-                
-    }
-    // to find the nearest request
-    min=index[0];
-    mini=0;
-    for(i=1;i<n;i++)
-    {
-        if(min>index[i])
-        {
-            min=index[i];
-            mini=i;
-        }
-    }
-    a[j]=req[mini];
-    j++;
-    cp=req[mini]; // change the current position value to next request
-    req[mini]=999;
+      for(i=0;i<n;i++)
+      {
+          index[i]=abs(cp-req[i]); // calculate distance of each request from current position
+                  
+      }
+      // to find the nearest request
+      min=index[0];
+      mini=0;
+      for(i=1;i<n;i++)
+      {
+          if(min>index[i])
+          {
+              min=index[i];
+              mini=i;
+          }
+      }
+      a[j]=req[mini];
+      j++;
+      cp=req[mini]; // change the current position value to next request
+      req[mini]=999;
     } // the request that is processed its value is changed so that it is not processed again
     printf("Sequence is : ");
     printf("%d",cp1);    
@@ -107,7 +107,8 @@ int scan(){
       break;
     }
   }
-  if(abs(head-LOW) <= abs(head-HIGH)){
+  if(abs(head-LOW) <= abs(head-HIGH))
+  {
       for(int j=dloc; j>=0; j--){
         printf("%d --> ",queue[j]);
       }
@@ -115,8 +116,9 @@ int scan(){
       for(int j=dloc+1; j<q_size; j++){
         printf("%d --> ",queue[j]);
       }
-      }      
-       else {
+  }      
+      else 
+      {
       for(int j=dloc+1; j<q_size; j++){
           printf("%d --> ",queue[j]);
       }

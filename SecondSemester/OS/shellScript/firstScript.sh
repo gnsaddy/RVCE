@@ -1,4 +1,3 @@
-
 while :
 do
 echo "1.Count the files with read only"

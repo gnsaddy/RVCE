@@ -15,7 +15,7 @@ int main(){
         printf("%d\n",n1);
         printf("%d\n",n2);
         count=2;
-        while(count<num){
+        while(count < num){
             sum=n1+n2;
             count++;
             printf("%d\n",sum);
