@@ -1,4 +1,16 @@
 {
     "code-runner.runInTerminal": true,
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "sqltools.connections": [
+        {
+            "askForPassword": true,
+            "connectionTimeout": 30,
+            "database": "lab1",
+            "dialect": "MySQL",
+            "name": "localhost",
+            "port": 3306,
+            "server": "127.0.0.1",
+            "username": "localhost"
+        }
+    ]
 }

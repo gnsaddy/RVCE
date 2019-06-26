@@ -28,7 +28,7 @@ int main(){
 	else{
 		printf("\nChild not created \n parent is waiting for child\n");
 		waitpid(pid,NULL,0);
-		printf("\nparent ends its proces\n");
+		printf("\nparent end its proces\n");
 	}
 	return 0;
 }

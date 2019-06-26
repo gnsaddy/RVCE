@@ -40,8 +40,8 @@ void sjf(){
 		for(i=k;i<n;i++){
 			if(btime>=at[i] && bt[i]<min){
 				swap(&bt[j],&bt[j+1]);
-                                swap(&at[j],&at[j+1]);
-                                swap(&p[j],&p[j+1]);
+                swap(&at[j],&at[j+1]);
+                swap(&p[j],&p[j+1]);
 			}
 		}
 		k++;
@@ -74,12 +74,13 @@ void future(){
         printf("\nEnter the number of process : ");
         scanf("%d",&n);
 
-        for(i=0;i<n;i++){
-                printf("\nEnter bt for process %d: ",i+1);
-                scanf("%d",&bt[i]);
-                printf("\nEnter at for process %d: ",i+1);
-                scanf("%d",&at[i]);
-		idle[i]=at[i];
+        for(i=0;i<n;i++)
+		{
+            printf("\nEnter bt for process %d: ",i+1);
+            scanf("%d",&bt[i]);
+            printf("\nEnter at for process %d: ",i+1);
+            scanf("%d",&at[i]);
+			idle[i]=at[i];
         }
 	printf("\nEnter idle time : ");
 	scanf("%d",&idleTime);
@@ -100,9 +101,9 @@ void future(){
 			}
 			else if(idle[i]==idle[j] && bt[i]<bt[j]){
 				swap(&p[i],&p[j]);
-                                swap(&at[i],&at[j]);
-                                swap(&bt[i],&bt[j]);
-                                swap(&idle[i],&idle[j]);
+                swap(&at[i],&at[j]);
+                swap(&bt[i],&bt[j]);
+                swap(&idle[i],&idle[j]);
 			}
 		}
 	}
@@ -114,9 +115,9 @@ void future(){
 		for(i=k;i<n;i++){
 			if(btime>=idle[i] && bt[i]< min){
 				swap(&bt[i],&bt[k]);
-                                swap(&at[i],&at[k]);
-                                swap(&p[i],&p[k]);
-                                swap(&idle[i],&idle[k]);
+                swap(&at[i],&at[k]);
+                swap(&p[i],&p[k]);
+                swap(&idle[i],&idle[k]);
 			}
 		}
 		k++;

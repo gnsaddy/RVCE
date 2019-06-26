@@ -7,6 +7,7 @@ void main(){
 
 	for(i=0;i<max;i++)
 		file[i]=0;
+		
 	x:	printf("\nEnter starting index ");
 		scanf("%d",&ind);
 

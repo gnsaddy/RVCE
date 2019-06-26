@@ -37,8 +37,6 @@
         if(k==frame)
             printf("\tpage fault no. %d ",pagefault);
         printf("\n");
-        
-
         if(count==frame)
             count=0;
     }
@@ -198,7 +196,9 @@ void main(){
             lru();
             break;
         case 3:
-            optimal();
+            optimal()for(j=dloc;j>=0;j++)
+                        printf("%d-->",queue[j]);
+;
             break;
         
         default:

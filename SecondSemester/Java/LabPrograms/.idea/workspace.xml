@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484d0f1f-e183-4fd8-a8c2-63370c553c09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/testapplet/Program8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testapplet/Cal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testapplet/Cal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/pageReplacementAlgorithm/testingAll.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/pageReplacementAlgorithm/testingAll.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/.program10Disk.c.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/.program6ProducerCons.c.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/.program7Mft.c.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/.program8Replacement.c.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/.program9LinkedFile.c.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/program3Fork.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/selfTest/program3Fork.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/program4SjfFuture.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/selfTest/program4SjfFuture.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OS/selfTest/program9LinkedFile.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../OS/selfTest/program9LinkedFile.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,38 +29,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestException/CustomException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/testthread/ProducerConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testthread/TestSynchronized.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
               <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-              <folding>
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1233#1234#0" expanded="true" />
-                <element signature="e#1351#1352#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testfiles/FileOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
+            <state relative-caret-position="1411">
               <caret line="84" column="42" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,22 +72,35 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
               <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testapplet/Cal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding>
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1125#1299#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/testapplet/Cal.java">
+        <entry file="file://$PROJECT_DIR$/src/testapplet/Program8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1316">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1186#1187#0" expanded="true" />
+                <element signature="e#1323#1324#0" expanded="true" />
+                <element signature="e#1360#1361#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,12 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestException/QueueException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
+            <state relative-caret-position="1071">
               <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-              <folding>
-                <element signature="e#110#111#0" expanded="true" />
-                <element signature="e#134#135#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -171,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/testthread/TestSynchronized.java" />
         <option value="$PROJECT_DIR$/src/testthread/AmountInBank.java" />
         <option value="$PROJECT_DIR$/src/testapplet/Cal.java" />
+        <option value="$PROJECT_DIR$/src/testapplet/Program8.java" />
       </list>
     </option>
   </component>
@@ -208,31 +202,6 @@
             </path>
             <path>
               <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="TestException" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testthread" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabPrograms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testthread" type="462c0819:PsiDirectoryNode" />
-              <item name="ProducerConsumer.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="LabPrograms" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -267,9 +236,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Applet.Cal">
+  <component name="RunManager" selected="Applet.Program8">
     <configuration name="Cal" type="Applet" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testapplet.Cal" />
+      <module name="LabPrograms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program8" type="Applet" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testapplet.Program8" />
       <module name="LabPrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -314,33 +290,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueueException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestException.QueueException" />
-      <module name="LabPrograms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestException.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.QueueException" />
+      <item itemvalue="Applet.Cal" />
       <item itemvalue="Application.GFG" />
       <item itemvalue="Application.ProducerConsumer" />
       <item itemvalue="Application.AmountInBank" />
-      <item itemvalue="Applet.Cal" />
+      <item itemvalue="Applet.Program8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Applet.Program8" />
         <item itemvalue="Applet.Cal" />
         <item itemvalue="Application.AmountInBank" />
         <item itemvalue="Application.GFG" />
         <item itemvalue="Application.ProducerConsumer" />
-        <item itemvalue="Application.QueueException" />
       </list>
     </recent_temporary>
   </component>
@@ -360,17 +323,18 @@
       <workItem from="1559847399266" duration="18497000" />
       <workItem from="1560074638922" duration="739000" />
       <workItem from="1561009660792" duration="27078000" />
+      <workItem from="1561566547242" duration="1623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51323000" />
+    <option name="totallyTimeSpent" value="52946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18429004" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18655589" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -534,22 +498,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testapplet/TestApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/studentRecords.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestException/CustomException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testthread/ProducerConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testthread/TestSynchronized.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -560,58 +529,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studentRecords.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestException/QueueException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#134#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testthread/ProducerConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testthread/TestSynchronized.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding>
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/testfiles/FileOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
+        <state relative-caret-position="1411">
           <caret line="84" column="42" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testfiles/StudentRecords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -626,20 +550,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestException/QueueException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testfiles/StudentRecords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testapplet/Cal.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testapplet/TestApplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1125#1299#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testapplet/Cal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1316">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="272">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testapplet/Program8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
           </folding>
         </state>
       </provider>
