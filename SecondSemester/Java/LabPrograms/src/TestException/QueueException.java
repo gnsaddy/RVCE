@@ -47,7 +47,7 @@ public class QueueException {
     public static void main(String[] args) {
         QueueException q = new QueueException();
         Scanner s = new Scanner(System.in);
-        int ch = 0;
+        int ch;
         int q1 = 3;
         while (q1 == 3) {
             System.out.println("1.Insert");
@@ -80,6 +80,8 @@ public class QueueException {
                     catch (CustomException e) {
                         System.out.println(e.getMessage());
                     }
+                default:
+                    System.out.println("Invalid choice");
             }
 
         }

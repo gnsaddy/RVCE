@@ -66,50 +66,55 @@ public class Cal extends Applet implements ActionListener
         char ch=str.charAt(0);
         if ( Character.isDigit(ch))
             t1.setText(t1.getText()+str);
-        else {
-            try {
-                if (str.equals("add")) {
-                    v1 = Integer.parseInt(t1.getText());
-                    OP = '+';
-                    t1.setText("");
-                } else if (str.equals("sub")) {
-                    v1 = Integer.parseInt(t1.getText());
-                    OP = '-';
-                    t1.setText("");
-                } else if (str.equals("mul")) {
-                    v1 = Integer.parseInt(t1.getText());
-                    OP = '*';
-                    t1.setText("");
-                } else if (str.equals("div")) {
-                    v1 = Integer.parseInt(t1.getText());
-                    OP = '/';
-                    t1.setText("");
-                } else if (str.equals("mod")) {
-                    v1 = Integer.parseInt(t1.getText());
-                    OP = '%';
-                    t1.setText("");
-                }
-                if (str.equals("EQ")) {
-                    v2 = Integer.parseInt(t1.getText());
-                    if (OP == '+')
-                        result = v1 + v2;
-                    else if (OP == '-')
-                        result = v1 - v2;
-                    else if (OP == '*')
-                        result = v1 * v2;
-                    else if (OP == '/')
-                        result = v1 / v2;
-                    else if (OP == '%')
-                        result = v1 % v2;
-                    t1.setText("" + result);
-                }
-                if (str.equals("clear")) {
-                    t1.setText("");
-                }
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-                t1.setText("error");
-            }
+        else
+        if(str.equals("add"))
+        {
+            v1=Integer.parseInt(t1.getText());
+            OP='+';
+            t1.setText("");
+        }
+        else if(str.equals("sub"))
+        {
+            v1=Integer.parseInt(t1.getText());
+            OP='-';
+            t1.setText("");
+        }
+        else if(str.equals("mul"))
+        {
+            v1=Integer.parseInt(t1.getText());
+            OP='*';
+            t1.setText("");
+        }
+        else if(str.equals("div"))
+        {
+            v1=Integer.parseInt(t1.getText());
+            OP='/';
+            t1.setText("");
+        }
+        else if(str.equals("mod"))
+        {
+            v1=Integer.parseInt(t1.getText());
+            OP='%';
+            t1.setText("");
+        }
+        if(str.equals("EQ"))
+        {
+            v2=Integer.parseInt(t1.getText());
+            if(OP=='+')
+                result=v1+v2;
+            else if(OP=='-')
+                result=v1-v2;
+            else if(OP=='*')
+                result=v1*v2;
+            else if(OP=='/')
+                result=v1/v2;
+            else if(OP=='%')
+                result=v1%v2;
+            t1.setText(""+result);
+        }
+        if(str.equals("clear"))
+        {
+            t1.setText("");
         }
     }
 }

@@ -22,19 +22,24 @@ public class Program8 extends Applet implements KeyListener
         int key=e.getKeyCode();
         switch(key)
         {
-            case KeyEvent.VK_UP:msg+="<UP ARROW>";
+            case KeyEvent.VK_UP:
+                msg+="<UP ARROW>";
                 showStatus("move to up");
                 break;
-            case KeyEvent.VK_DOWN:msg+="<DOWN ARROW>";
+            case KeyEvent.VK_DOWN:
+                msg+="<DOWN ARROW>";
                 showStatus("move to down");
                 break;
-            case KeyEvent.VK_LEFT:msg+="<LEFT ARROW>";
+            case KeyEvent.VK_LEFT:
+                msg+="<LEFT ARROW>";
                 showStatus("move to left");
                 break;
-            case KeyEvent.VK_RIGHT:msg+="<RIGHT ARROW>";
+            case KeyEvent.VK_RIGHT:
+                msg+="<RIGHT ARROW>";
                 showStatus("move to right");
                 break;
-            case KeyEvent.VK_ENTER:msg+="<BUTTON ENTER>";
+            case KeyEvent.VK_ENTER:
+                msg+="<BUTTON ENTER>";
                 showStatus("enter key pressed");
                 break;
         }

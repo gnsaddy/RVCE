@@ -8,7 +8,7 @@ class PutGet{
         while (status == true){
             try{
                 wait();
-            }catch (InterruptedException e){
+            }catch (Throwable e){
                 System.out.println("Exception : "+e);
             }
         }
@@ -21,7 +21,7 @@ class PutGet{
         while (status == false){
             try{
                 wait();
-            }catch (InterruptedException e){
+            }catch (Throwable e){
                 System.out.println("Exception : "+e);
             }
         }
@@ -41,10 +41,10 @@ class Producer extends Thread{
     public void run(){
         for (int i=0;i<5;i++){
             pg.put(i);
-            System.out.println("testthread.Producer produces : "+i);
+            System.out.println("Producer produces : "+i);
             try{
                 sleep(1000);
-            }catch (InterruptedException e){
+            }catch (Throwable e){
                 System.out.println("Exception : "+e);
             }
         }
@@ -60,10 +60,10 @@ class Consumer extends Thread{
     public void run(){
         for (int i=0;i<5;i++) {
             num = pg1.get();
-            System.out.println("testthread.Consumer consumes : " + num);
+            System.out.println("Consumer consumes : " + num);
             try {
                 sleep(1000);
-            } catch (InterruptedException e) {
+            } catch (Throwable e) {
                 System.out.println("Exception : " + e);
             }
         }
