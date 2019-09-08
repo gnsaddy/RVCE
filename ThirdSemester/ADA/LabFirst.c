@@ -1,6 +1,7 @@
 // implement string pattern matching using brute force technique and find the complexity for different times
 
 #include <stdio.h>
+#include<windows.h>
 #include <string.h>
 #include <stdlib.h>
 #include <sys/time.h>
