@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <sys/time.h>
 
 char t[100], p[50];
@@ -29,21 +30,34 @@ void main()
 {
     struct timeval start, end;
     int pos;
+    FILE *out_file = fopen("stats.txt", "a"); // append only
     printf("Enter the Source String :-  ");
     gets(t);
     printf("Enter the pattern :-  ");
     gets(p);
 
-    gettimeofday(&start, NULL);
+    gettimeofday(&start, 0);
     pos = brute_force();
-    gettimeofday(&end, NULL);
+    gettimeofday(&end, 0);
 
     if (pos == -1)
         printf("%s pattern not found in text", p);
     else
         printf("%s pattern found at index %d", p, pos);
 
-    int time_taken = end.tv_usec - start.tv_usec;
+    unsigned long time_taken = end.tv_sec - start.tv_sec;
+
+    if (out_file == NULL)
+    {
+        printf("Error! Could not open file\n");
+        exit(-1); // must include stdlib.h
+    }
+
+    // write to file vs write to screen
+    fprintf(out_file, "Different timings %ld\n", time_taken); // write to file
+
+    // fprintf(stdout, "this is a test %d\n", time_taken); // write to screen
+
     // cpu process time calculation
-    printf("\nbrute_force() took %d seconds to execute \n", time_taken);
+    printf("\nbrute_force() took %ld seconds to execute \n", time_taken);
 }
