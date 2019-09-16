@@ -1,13 +1,11 @@
 // implement string pattern matching using brute force technique and find the complexity for different times
-
 #include <stdio.h>
-#include<windows.h>
 #include <string.h>
 #include <stdlib.h>
 #include <sys/time.h>
+#include <unistd.h>
 
 char t[100], p[50];
-
 int brute_force()
 {
     int n, j, m, i;
@@ -37,16 +35,22 @@ void main()
     printf("Enter the pattern :-  ");
     gets(p);
 
-    gettimeofday(&start, 0);
+    mingw_gettimeofday(&start, NULL);
     pos = brute_force();
-    gettimeofday(&end, 0);
+    // sleep(1);
+    mingw_gettimeofday(&end, NULL);
 
-    if (pos == -1)
+    if (pos == -1) 
         printf("%s pattern not found in text", p);
     else
         printf("%s pattern found at index %d", p, pos);
 
-    unsigned long time_taken = end.tv_sec - start.tv_sec;
+    
+    long seconds = (end.tv_sec - start.tv_sec);
+    long micros = (end.tv_usec - start.tv_usec);
+
+    printf("\nTime elapsed is %d seconds and %d micros\n", seconds, micros);
+
 
     if (out_file == NULL)
     {
@@ -55,10 +59,8 @@ void main()
     }
 
     // write to file vs write to screen
-    fprintf(out_file, "Different timings %ld\n", time_taken); // write to file
+    fprintf(out_file, "\nTime elapsed is %d seconds and %d micros\n", seconds, micros); // write to file
 
     // fprintf(stdout, "this is a test %d\n", time_taken); // write to screen
 
-    // cpu process time calculation
-    printf("\nbrute_force() took %ld seconds to execute \n", time_taken);
 }
