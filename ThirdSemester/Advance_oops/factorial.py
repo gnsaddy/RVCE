@@ -5,7 +5,6 @@ import math
 # decorator to calculate duration
 # taken by any function.
 
-
 def calculate_time(func):
 
     # added arguments inside the inner1,
