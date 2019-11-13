@@ -32,7 +32,7 @@ def click():
     else:
         findUser = (
             "SELECT * FROM `admin` WHERE `userid` = ? AND `password` = ? ")
-        cursor.execute(findUser, [userid.get(), password.get()])
+        cursor.execute(findUser, [str(userid.get()), str(password.get())])
 
         if cursor.fetchall() is not None:
             userid.set("")
