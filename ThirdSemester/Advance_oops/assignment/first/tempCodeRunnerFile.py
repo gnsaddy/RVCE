@@ -1,0 +1,2 @@
+
+    numOfLines = len(data.splitlines())
