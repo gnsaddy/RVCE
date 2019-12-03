@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    .col {
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <table border="3px" style="padding: 10px; margin: 2%; "">
+        <thead style=" margin: 5%;"">
+        <tr style=" margin: 5%;">
+            <th class="col">Employee ID</th>
+            <th class="col">Employee Name</th>
+            <th class="col">Address</th>
+            <th class="col">Contact</th>
+        </tr>
+        </thead>
+        <tbody style="margin: 5%;">
+            {% for data in shelf %}
+            <tr style="margin: 5%;">
+                <td class="col">{{ data.empid }}</td>
+                <td class="col">{{ data.name }}</td>
+                <td class="col">{{ data.address }}</td>
+                <td class="col">{{ data.contact }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
