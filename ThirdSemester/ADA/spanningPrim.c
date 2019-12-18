@@ -2,12 +2,10 @@
 #include <stdlib.h>
 
 int a, b, u, v, n, i, j, ne = 1;
-int visited[10] = {
-	0},
-	min, mincost = 0, cost[10][10];
+int visited[10] = {0};
+int min, mincost = 0, cost[10][10];
 void main()
 {
-
 	printf("\n Enter the number of nodes:");
 	scanf("%d", &n);
 	printf("\n Enter the adjacency matrix:\n");
