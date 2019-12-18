@@ -19,7 +19,6 @@ int main()
 	printf("\nEnter the starting node:");
 	scanf("%d", &u);
 	dijkstra(G, n, u);
-
 	return 0;
 }
 
@@ -29,9 +28,6 @@ void dijkstra(int G[MAX][MAX], int n, int startnode)
 	int cost[MAX][MAX], distance[MAX], pred[MAX];
 	int visited[MAX], count, mindistance, nextnode, i, j;
 
-	//pred[] stores the predecessor of each node
-	//count gives the number of nodes seen so far
-	//create the cost matrix
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n; j++)
 			if (G[i][j] == 0)

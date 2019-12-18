@@ -2,7 +2,9 @@
 #define TRUE 1
 #define FALSE 0
 int inc[50],w[50],sum,n;
+
 void sumset(int, int, int);
+
 int promising(int i,int wt,int total) {
 	return(((wt+total)>=sum)&&((wt==sum)||(wt+w[i+1]<=sum)));
 }
@@ -17,6 +19,7 @@ void main() {
 	}
 	printf("\n Input the sum value to create sub set:\n");
 	scanf("%d",&sum);
+
 	for (i=0;i<=n;i++)
 	  for (j=0;j<n-1;j++)
 	   if(w[j]>w[j+1]) {
@@ -27,6 +30,7 @@ void main() {
 	printf("\n The given %d numbers in ascending order:\n",n);
 	for (i=0;i<n;i++)
 	  printf("%d \t",w[i]);
+	  
 	if((total<sum))
 	  printf("\n Subset construction is not possible"); else {
 		for (i=0;i<n;i++)
