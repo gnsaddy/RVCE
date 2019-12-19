@@ -4,7 +4,6 @@
 int inc[50],w[50],sum,n;
 
 void sumset(int, int, int);
-
 int promising(int i,int wt,int total) {
 	return(((wt+total)>=sum)&&((wt==sum)||(wt+w[i+1]<=sum)));
 }
