@@ -70,7 +70,6 @@ void dijkstra(int G[MAX][MAX], int n, int startnode)
 				}
 		count++;
 	}
-
 	//print the path and distance of each node
 	for (i = 0; i < n; i++)
 		if (i != startnode)
