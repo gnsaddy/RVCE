@@ -8,7 +8,7 @@ def calculate_time(func):
         begin = time.time()
         f = func()
         end = time.time()
-        print("Total time taken in : ", func.__name__, end - begin)
+        print("Total time taken in : ", func.__name__, int(end - begin))
         return f
     return inner1
 

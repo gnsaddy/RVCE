@@ -7,11 +7,12 @@ def calculate_time(func):
         f = func()
         end = time.time()
         print("Total time taken in : ", func.__name__, end - begin)
+        minus, sec = divmod((end - begin), 60)
+        print("minutes ", minus, "\n Seconds ", sec)
         return f
     return inner1
 
 
-@calculate_time
 def fib():
     a, b = 0, 1
     while True:
@@ -19,8 +20,13 @@ def fib():
         yield a
 
 
-g = fib()
-print("\nUsing for in loop")
-num = int(input("Enter number:- "))
-for i in range(num):
-    print(next(g))
+@calculate_time
+def findFib():
+    g = fib()
+    print("\nUsing for in loop")
+    num = int(input("Enter number:- "))
+    for i in range(num):
+        print(next(g))
+
+
+findFib()
