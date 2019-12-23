@@ -4,7 +4,6 @@ class Employee:
 	cur = db.cursor()
 
 	def add(self,slno,name,address,empcode,dob,age,mobile,status,designation):
-		#v = self.cur.execute('''Insert into Emp values(1,'abc','address','e01',198,22,78787878,'working','analyst');''')
 		v = self.cur.execute('''Insert into Emp values(%d,'%s','%s','%s',%d,%d,%d,'%s','%s')'''%(int(slno),name,address,empcode,int(dob),int(age),int(mobile),status,designation))
 		print("Record inserted!")
 

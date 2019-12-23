@@ -1,16 +1,13 @@
 # importing libraries
 import time
-import math
 
 
 def calculate_time(func):
-    def inner1():
-        begin = time.time()
-        f = func()
-        end = time.time()
-        print("Total time taken in : ", func.__name__, int(end - begin))
-        return f
-    return inner1
+    begin = time.time()
+    func()
+    end = time.time()
+    print("Total time taken by : ", func.__name__, "() is :", (end - begin))
+    return func
 
 
 class Fibs:
@@ -32,7 +29,3 @@ def execute():
     n = int(input("Enter number:- "))
     for f in range(n):
         print(next(fib))
-    # print(next(fib))
-
-
-execute()
