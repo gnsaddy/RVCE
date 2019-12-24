@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+# Create your views here.
 
 
-class Registration(TemplateView):
+class Index(TemplateView):
     def get(self, request, *args, **kwargs):
-        return render(request, 'registration.html', {'college': 'RVCE'})
+        return render(request, 'index.html', {'college': 'rvce'})
 
 
 class Display(TemplateView):
