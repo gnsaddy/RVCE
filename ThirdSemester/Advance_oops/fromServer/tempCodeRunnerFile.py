@@ -1,3 +1,2 @@
-from tkinter import *
-import tkinter.messagebox as tm
-class LoginPage(Frame):
+print(type(Comp))
+print(type(c1))

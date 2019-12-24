@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <h2><a href={% url 'index' %}> HOME</a></h2>
+    <h2><a href={% url 'upload' %}> INSERT</a></h2>
+    <h2><a href={% url 'display' %}> DISPLAY</a></h2>
+</head>
+
+<body>
+    <table border="3px" style="padding: 10px; margin: 2%; "">
+            <thead style=" margin: 5%;"">
+        <tr style=" margin: 5%;">
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Employee Age</th>
+            <th>Employee Address</th>
+        </tr>
+        </thead>
+        <tbody style="margin: 5%;">
+            {% for data in shelf %}
+            <tr style="margin: 5%;">
+                <td>{{ data.emp_id }}</td>
+                <td>{{ data.name }}</td>
+                <td>{{ data.age }}</td>
+                <td>{{ data.address }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>

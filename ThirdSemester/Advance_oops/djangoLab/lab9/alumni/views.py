@@ -13,5 +13,4 @@ class Display(TemplateView):
         usn = request.GET['usn']
         name = request.GET['name']
         address = request.GET['address']
-
         return render(request, 'display.html', {'usn': usn, 'name': name, 'address': address})
