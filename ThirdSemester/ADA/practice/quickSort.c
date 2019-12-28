@@ -11,14 +11,16 @@ int main()
 	int a[600],n,i,it,k;
 	FILE *fp;
 	fp = fopen("quickTime.txt","w");
-	printf("\nEnter the number of iterations : ");
-	scanf("%d",&it);
-for(k=1;k<=it;k++){
+	//printf("\nEnter the number of iterations : ");
+	//scanf("%d",&it);
+//for(k=1;k<=it;k++){
 	printf("\nHow many elements :- ");
 	scanf("%d",&n);
 	printf("\nEnter array elements:\n");
-	for(i=0;i<n;i++)
-		a[i] = rand()%1000;
+	for(i=0;i<n;i++){
+	//	a[i] = rand()%1000;
+		scanf("%d",&a[i]);
+	}
 	for(i=0;i<n;i++){
 		printf(" %d ",a[i]);
 	}
@@ -31,7 +33,7 @@ for(k=1;k<=it;k++){
 		printf("%d ",a[i]);
 	printf("\nQuicsort takes %f ms to sort an array of length %d : ",calTime,n);
 	fprintf(fp,"%d \t %f \n",n,calTime);
-}
+//}
 return 0;
 }
 

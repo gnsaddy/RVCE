@@ -13,11 +13,11 @@ int brute_force()
     n = strlen(t);
     m = strlen(p);
 
-    for (i = 0; i < n; i++)
+    for (i = 0; i < (n-m); i++)
     {
         j = 0;
-        while (j < m && t[i + j] == p[j])
-        {
+        while (j < m && p[j] == t[i + j])
+		{
             j++;
             if (j == m)
                 return i + 1; //pattern found
