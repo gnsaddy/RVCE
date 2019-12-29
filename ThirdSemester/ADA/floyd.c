@@ -1,6 +1,10 @@
 #include<stdio.h>
+
+int min(int a,int b){
+	return (a<b)?a:b;
+}
 int p[20][20],n;
-int min(int,int);
+
 int path()
 {
 	int i,j,k;
@@ -12,19 +16,13 @@ int path()
 				else
 					p[i][j]=min(p[i][j],p[i][k]+p[k][j]);
 }
-int min(int a,int b)
-{
-	if(a<b)
-		return a;
-	else
-		return b;
-}
+
 void main()
 {
 	int i,j;
 	printf("\n Enter the no of vertices:");
 	scanf("%d",&n);
-	printf("\n Enter the adjacency matrix:");
+	printf("\n Enter the adjacency matrix:\n");
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
@@ -43,6 +41,7 @@ void main()
 		}
 		printf("\n");
 	}
+	
 	 for(i=0;i<n;i++)
 	{
         	for(j=0;j<n;j++)	

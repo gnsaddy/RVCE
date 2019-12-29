@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 #define TRUE 1
 #define FALSE 0
 int inc[50], w[50], sum, n;
@@ -40,7 +41,24 @@ void main()
 	for (i = 0; i < n; i++)
 	{
 		scanf("%d", &w[i]);
+		if(w[i] < 0 ){
+			printf("\nSet contain -ve values\n");
+			exit(0);
+		}
 		total += w[i];
+	}
+	
+	for(i=0;i<n-1;i++){
+		if(w[i]>w[i+1]){
+			printf("Array is not sorted in assenting order");
+			exit(0);
+		}
+		for(j=i+1;j<n;j++){
+			if(w[i] == w[j]){
+				printf("\nSet having duplicate elements give unique elements \n");
+				exit(0);
+			}
+		}
 	}
 
 	printf("\n The given %d numbers in ascending order:\n", n);
@@ -60,13 +78,3 @@ void main()
 		sumset(-1, 0, total);
 	}
 }
-
-
-// for (i = 0; i <= n; i++)
-	// 	for (j = 0; j < n - 1; j++)
-	// 		if (w[j] > w[j + 1])
-	// 		{
-	// 			temp = w[j];
-	// 			w[j] = w[j + 1];
-	// 			w[j + 1] = temp;
-	// 		}

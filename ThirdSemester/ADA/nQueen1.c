@@ -28,9 +28,6 @@ void print_sol(int n)
         }
         printf("\n");
     }
-    if(count == 2){
-        exit(0);
-    }
 }
 void queen(int n)
 {
