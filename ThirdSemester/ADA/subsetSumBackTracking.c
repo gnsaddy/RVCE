@@ -34,7 +34,7 @@ void sumset(int i, int weight, int total)
 }
 void main()
 {
-	int i, j, n,total = 0;
+	int i, j,total = 0;
 	printf("\n Enter how many numbers:\n");
 	scanf("%d", &n);
 	printf("\n Enter %d numbers to the set:\n", n);
@@ -67,6 +67,10 @@ void main()
 
 	printf("\n Input the sum value to create sub set:\n");
 	scanf("%d", &sum);
+	if(sum < 0){
+		printf("\nSum should be +ve \n");
+		exit(0);
+	}
 
 	if ((total < sum))
 		printf("\n Subset construction is not possible");
