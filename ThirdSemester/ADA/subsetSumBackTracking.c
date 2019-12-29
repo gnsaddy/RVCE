@@ -34,10 +34,10 @@ void sumset(int i, int weight, int total)
 }
 void main()
 {
-	int i, j, n, temp, total = 0;
+	int i, j, n,total = 0;
 	printf("\n Enter how many numbers:\n");
 	scanf("%d", &n);
-	printf("\n Enter %d numbers to th set:\n", n);
+	printf("\n Enter %d numbers to the set:\n", n);
 	for (i = 0; i < n; i++)
 	{
 		scanf("%d", &w[i]);
