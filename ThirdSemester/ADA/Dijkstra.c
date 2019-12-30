@@ -2,26 +2,26 @@
 #define INFINITY 9999
 #define MAX 10
 
-void dijkstra(int G[MAX][MAX], int n, int startnode);
+void dijkstra(int ar[MAX][MAX], int n, int startnode);
 
 int main()
 {
-	int G[MAX][MAX], i, j, n, u;
+	int ar[MAX][MAX], i, j, n, start;
 	printf("Enter no. of vertices:");
 	scanf("%d", &n);
 	printf("\nEnter the adjacency matrix:\n");
 
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n; j++)
-			scanf("%d", &G[i][j]);
+			scanf("%d", &ar[i][j]);
 
 	printf("\nEnter the starting node:");
-	scanf("%d", &u);
-	dijkstra(G, n, u);
+	scanf("%d", &start);
+	dijkstra(ar, n, start);
 	return 0;
 }
 
-void dijkstra(int G[MAX][MAX], int n, int startnode)
+void dijkstra(int ar[MAX][MAX], int n, int startnode)
 {
 
 	int cost[MAX][MAX], distance[MAX], pred[MAX];
@@ -29,10 +29,10 @@ void dijkstra(int G[MAX][MAX], int n, int startnode)
 
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n; j++)
-			if (G[i][j] == 0)
+			if (ar[i][j] == 0)
 				cost[i][j] = INFINITY;
 			else
-				cost[i][j] = G[i][j];
+				cost[i][j] = ar[i][j];
 
 	//initialize pred[],distance[] and visited[]
 	for (i = 0; i < n; i++)
@@ -50,7 +50,7 @@ void dijkstra(int G[MAX][MAX], int n, int startnode)
 	{
 		mindistance = INFINITY;
 
-		//nextnode gives the node at minimum distance
+		//nextnode arives the node at minimum distance
 		for (i = 0; i < n; i++)
 			if (distance[i] < mindistance && !visited[i])
 			{

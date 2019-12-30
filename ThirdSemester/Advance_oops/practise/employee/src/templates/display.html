@@ -1,0 +1,27 @@
+<html>
+<head><h1 style="text-align:center;">EMPLOYEE MANAGEMENT </h1><title>INDEX</title>
+<body><hr>
+<h3 style="text-align:center;"><a href={% url 'index' %}>Index</a>&nbsp;&nbsp;&nbsp;<a href={% url 'show' %}>Display</a></h3>
+<hr><br>
+<body>
+ {% block content %}
+    <h3 align="center">Display</h3>
+    <table align="center" border="2px black" cellpadding="10">
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+			<th>Age</th>
+            <th>Address</th>
+        </tr>
+        {% for d in shelf %}
+        <tr>
+            <td>{{ d.eid }}</td>
+            <td>{{ d.name }}</td>
+            <td>{{ d.age }}</td>
+			<td>{{ d.address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+</body>
+</html>

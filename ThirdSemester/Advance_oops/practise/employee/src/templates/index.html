@@ -1,0 +1,32 @@
+<html>
+<head><h1 style="text-align:center;">EMPLOYEE MANAGEMENT </h1><title>INDEX</title>
+<body><hr>
+<h3 style="text-align:center;"><a href={% url 'index' %}>Index</a>&nbsp;&nbsp;&nbsp;<a href={% url 'show' %}>Display</a></h3>
+<hr><br>
+<form action="insert">
+
+	<table border=1px>
+		<tr>
+			<td>Employee ID</td>
+			<td><input type="text" name="eid" placeholder="Employee ID" required></td>
+		</tr>
+		<tr>
+			<td>Employee Name</td>
+			<td><input type="text" name="name" placeholder="Employee Name" required></td>
+		</tr>
+		<tr>
+			<td>Employee Age</td>
+			<td><input type="text" name="age" placeholder="Employee Age" required></td>
+		</tr>
+		<tr>
+			<td>Employee Address</td>
+			<td><input type="text" name="address" placeholder="Employee Address" required></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" style="margin:100%;text-align:center;"><input type="submit" name="submit" value="Submit"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
