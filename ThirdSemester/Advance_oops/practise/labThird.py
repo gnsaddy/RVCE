@@ -11,16 +11,6 @@ class Calculate(ABC):
         pass
 
 
-# class Addition(Calculate):
-#     def find(self):
-#         sum = self.a + self.b
-#         print("sum is :-", sum)
-
-
-# ad = Addition(10, 20)
-# ad.find()
-
-
 class AdditionList(Calculate):
     def find(self):
         sum = []
