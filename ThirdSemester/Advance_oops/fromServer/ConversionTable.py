@@ -39,7 +39,7 @@ def clear():
 l1 = Label(top,text = "Gram Value").grid(row = 1,column=0,padx=30,pady=20)
 gram = Entry(top,textvariable = val).grid(row = 1,column = 1,ipadx = 10)
 
-ounce = Button(top,text="Ounce",command = GConversion).grid(row = 1,column=2)
+ounce = Button(top,text="Ounce",command = GConversion,bg="red").grid(row = 1,column=2)
  
 
 l2 = Label(top,text = "Kilo Value").grid(row = 2,column=0,padx=30,pady=20)

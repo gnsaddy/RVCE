@@ -1,32 +1,31 @@
+def details(value=False):
+    if value:
+        keys=['empid','empname','empadd']
+    
+    else:
+        keys=['cmpid','cmpname','cmpadd']
 
-def Comp_Emp(et=False):
-        if(et == True):
-                keys = ['empid','ename','empaddress']
-        else:
-                keys = ['compid','cname','caddress']
+    def init(self,**kwargs):
+        self.expected_keys=set(keys)
+        if self.expected_keys !=set(kwargs.keys()):
+            raise ValueError("Key don't match")
+        for k,v in kwargs.items():
+            setattr(self,k,v)
 
-        class Credential:
-                exp_keys = set(keys)
-
-                def __init__(self,**kwargs):
-                        if self.exp_keys != set(kwargs.keys()):
-                                raise KeyError
-                        else:
-                                for k,v in kwargs.items():
-                                        setattr(self, k, v)
-        return Credential
+    if value:
+        return type('emp',(object,),{'__init__':init,})
+    else:
+        return type('comp',(object,),{'__init__':init,})
 
 
-Emp = Comp_Emp(True)
-#help(Emp)
-e1 = Emp(empid='e01',ename='Ishaani',empaddress='bengaluru')
-#help(e1)
-print(type(Emp))
+emp=details(True)
+e1=emp(empid='101',empname='ABC',empadd='Bengalore')
+print(type(emp))
 print(type(e1))
-print("\n")
+print(e1.empid)
 
-Comp = Comp_Emp(False)
-c1 = Comp(compid = 'c01',cname = 'Cerner',caddress = 'HSR')
-print(type(Comp))
+comp=details(False)
+c1=comp(cmpid='c1',cmpname='XYZ',cmpadd='Bengalore')
+print(type(comp))
 print(type(c1))
-
+print(c1.cmpid)

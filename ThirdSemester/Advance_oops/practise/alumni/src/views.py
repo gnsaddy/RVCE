@@ -13,7 +13,11 @@ class Display(TemplateView):
         name = request.GET['name']
         age = request.GET['age']
         address = request.GET['address']
+        d = {'aid':aid,'name':name,'age':age,'address':address}
+        with open('details.txt','a+') as fp:
+            fp.write(str(d))
+        return render(request,'display.html',d)
         
-        return render(request,'display.html',{'aid':aid,'name':name,'age':age,'address':address})
+        
         
         
