@@ -1,11 +1,8 @@
-##### LAB TKINTER ############
-import tkinter
 from tkinter import *
 from tkinter import messagebox
+import MySQLdb as ms
 
-uname = "rvce"
-Password = "12345"
-top = tkinter.Tk(className="LOGIN FORM")
+top = Tk(className="LOGIN FORM")
 top.geometry("400x300")
 
 uvar = StringVar()
@@ -15,7 +12,13 @@ pvar.set("")
 
 
 def click():
-    if(uvar.get() == uname and pvar.get() == Password):
+    con = ms.connect('localhost', 'root', '', 'testpymysql')
+    cur = con.cursor()
+    exe = cur.execute('''select * from admin where userid='%s' and password='%s' ''' %
+                      (uvar.get(), pvar.get()))
+    print(cur.fetchall())
+
+    if exe == 1:
         messagebox.showinfo("Alert", "Authorized user")
     else:
         messagebox.showinfo("Alert", "Unauthorized user")
@@ -24,23 +27,14 @@ def click():
 def Clear():
     uvar.set("")
     pvar.set("")
-    uentry.focus()
 
 
-ulabel = tkinter.Label(top, text="User name")
-uentry = tkinter.Entry(top, textvariable=uvar)
-plabel = tkinter.Label(top, text="Password")
-pentry = tkinter.Entry(top, textvariable=pvar)
-b1 = tkinter.Button(top, text="Submit", command=click)
-b2 = tkinter.Button(top, text="Cancel", command=Clear)
-b3 = tkinter.Button(top, text="Exit", command=top.destroy)
+ulabel = Label(top, text="User name").grid(row=0, column=0)
+uentry = Entry(top, textvariable=uvar).grid(row=0, column=3)
+plabel = Label(top, text="Password").grid(row=1, column=0)
+pentry = Entry(top, textvariable=pvar, show='*').grid(row=1, column=3)
+b1 = Button(top, text="Submit", command=click).grid(row=3, column=0)
+b2 = Button(top, text="Cancel", command=Clear).grid(row=3, column=2)
+b3 = Button(top, text="Exit", command=top.destroy).grid(row=3, column=4)
 
-# geometry manager
-ulabel.grid(row=0, column=0)
-uentry.grid(row=0, column=3)
-plabel.grid(row=1, column=0)
-pentry.grid(row=1, column=3)
-b1.grid(row=3, column=0)
-b2.grid(row=3, column=2)
-b3.grid(row=3, column=4)
-tkinter.mainloop()
+top.mainloop()
