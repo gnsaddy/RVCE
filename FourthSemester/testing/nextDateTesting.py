@@ -3,13 +3,11 @@ def DateTest():
     d = int(input("Enter date : "))
     m = int(input("Enter month : "))
     y = int(input("Enter year : "))
-    month31 = 31
-    month30 = 30
 
     if m in (1, 3, 5, 7, 8, 10, 12):
-        ndays = month31
+        ndays = 31
     elif m in (4, 6, 9, 11):
-        ndays = month30
+        ndays = 30
 
     if(m == 2):
         if(y % 4 == 0):
@@ -44,13 +42,7 @@ def DateTest():
                     nextyear = nextyear+1
 
                 print("Given date is : ", d, "-", m, "-", y)
-
-                if (nextyear < 2021):
-                    print("Next day's date is : ", nextdate,
-                          "-", nextmonth, "-", nextyear)
-                else:
-                    print("Invalid next year")
-
+                print("Next day's date is : ", nextdate,"-", nextmonth, "-", nextyear)
             else:
                 print("Invalid Input month")
         else:
