@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textUsn"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="USN"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editUsn"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_toRightOf="@+id/textUsn"
+        android:gravity="center"
+        android:hint="USN"
+        android:padding="5sp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUsn"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="Name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUsn"
+        android:layout_margin="10sp"
+        android:layout_toRightOf="@+id/textName"
+        android:gravity="center"
+        android:hint="Name"
+        android:padding="5sp"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/textCGPA"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textName"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="CGPA"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editCgpa"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_margin="10sp"
+        android:layout_toRightOf="@+id/textCGPA"
+        android:gravity="center"
+        android:hint="CGPA"
+        android:padding="5sp"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutCreate"
+        android:layout_width="172dp"
+        android:layout_height="193dp"
+        android:layout_below="@+id/textCGPA"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="149dp"
+            android:layout_height="60dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Create "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="151dp"
+            android:layout_height="62dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Add "
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="183dp"
+        android:layout_height="189dp"
+        android:layout_below="@+id/editCgpa"
+        android:layout_margin="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_toRightOf="@+id/layoutCreate"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="154dp"
+            android:layout_height="60dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Update "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="156dp"
+            android:layout_height="58dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Delete "
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/layoutCreate"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnMail"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:scaleType="fitCenter"
+            android:shadowColor="@color/colorPrimary"
+            android:src="@android:drawable/ic_dialog_email"
+            android:text="Email Details"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="View Details"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="5sp"
+            android:scaleType="fitCenter"
+            android:shadowColor="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_notification_clear_all" />
+    </LinearLayout>
+</RelativeLayout>
