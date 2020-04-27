@@ -1,0 +1,22 @@
+{
+  "name": "loginvalidation",
+  "version": "1.1.1",
+  "description": "Login Validation web-app using PWA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "nodemon": "2.0.2"
+  },
+  "keywords": [
+    "pwa",
+    "webapp",
+    "service-worker",
+    "manifest"
+  ],
+  "author": "Aditya Raj",
+  "license": "ISC"
+}
