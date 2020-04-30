@@ -66,7 +66,6 @@ void producer()
 	printf("\nProducer produces the item %d",x);
 	mutex=signal(mutex);
 }
- 
 void consumer()
 {
 	mutex=wait(mutex);
