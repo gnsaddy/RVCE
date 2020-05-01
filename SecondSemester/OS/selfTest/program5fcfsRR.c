@@ -23,7 +23,7 @@ void rr(){
 	printf("\nEnter time quantum : ");
 	scanf("%d",&tq);
 
-	printf("\npid \t AT \t BT \t TAT \t WT \n");
+	printf("\npid \t AT \t BT \t TAT \t WT \t RT \t CT \n");
 	for(time=0,i=0;remain!=0;){
 		if(rt[i]<=tq && rt[i]>0){
 			time += rt[i];
@@ -37,7 +37,7 @@ void rr(){
 
 		if(rt[i]==0 && flag==1){
 			remain--;
-			printf("\np[%d] \t %d \t %d \t %d \t %d \n",i+1,at[i],bt[i],time-at[i],time-at[i]-bt[i]);
+			printf("\np[%d] \t %d \t %d \t %d \t %d \t %d \t %d ",i+1,at[i],bt[i],time-at[i],time-at[i]-bt[i],rt[i], time);
 			awt += time-at[i]-bt[i];
 			atat += time-at[i];
 			flag=0;

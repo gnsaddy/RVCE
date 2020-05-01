@@ -1,69 +1,54 @@
-#include<stdio.h>
+
+#include<stdio.h> 
  
-int main()
-{
-      int i, limit, total = 0, x, counter = 0, time_quantum;
-      int wait_time = 0, turnaround_time = 0, arrival_time[10], burst_time[10], temp[10];
-      float average_wait_time, average_turnaround_time;
-      printf("nEnter Total Number of Processes:\t");
-      scanf("%d", &limit);
-      x = limit;
-      for(i = 0; i < limit; i++)
-      {
-            printf("nEnter Details of Process[%d]\n", i + 1);
+int main() 
+{ 
  
-            printf("Arrival Time:\t");
- 
-            scanf("%d", &arrival_time[i]);
- 
-            printf("Burst Time:\t");
- 
-            scanf("%d", &burst_time[i]);
- 
-            temp[i] = burst_time[i];
-      }
- 
-      printf("nEnter Time Quantum:\t");
-      scanf("%d", &time_quantum);
-      printf("\nProcess IDttBurst Timet Turnaround Timet Waiting Time\n");
-      for(total = 0, i = 0; x != 0;)
-      {
-            if(temp[i] <= time_quantum && temp[i] > 0)
-            {
-                  total = total + temp[i];
-                  temp[i] = 0;
-                  counter = 1;
-            }
-            else if(temp[i] > 0)
-            {
-                  temp[i] = temp[i] - time_quantum;
-                  total = total + time_quantum;
-            }
-            if(temp[i] == 0 && counter == 1)
-            {
-                  x--;
-                  printf("\nProcess[%d]\t\t%d\t\t %d\t\t\t %d", i + 1, burst_time[i], total - arrival_time[i], total - arrival_time[i] - burst_time[i]);
-                  wait_time = wait_time + total - arrival_time[i] - burst_time[i];
-                  turnaround_time = turnaround_time + total - arrival_time[i];
-                  counter = 0;
-            }
-            if(i == limit - 1)
-            {
-                  i = 0;
-            }
-            else if(arrival_time[i + 1] <= total)
-            {
-                  i++;
-            }
-            else
-            {
-                  i = 0;
-            }
-      }
- 
-      average_wait_time = wait_time * 1.0 / limit;
-      average_turnaround_time = turnaround_time * 1.0 / limit;
-      printf("\n\nAverage Waiting Time:\t%f", average_wait_time);
-      printf("\nAvg Turnaround Time:\t%f\n", average_turnaround_time);
-      return 0;
+  int count,j,n,time,remain,flag=0,time_quantum; 
+  int wait_time=0,turnaround_time=0,at[10],bt[10],rt[10]; 
+  printf("Enter Total Process:\t "); 
+  scanf("%d",&n); 
+  remain=n; 
+  for(count=0;count<n;count++) 
+  { 
+    printf("Enter Arrival Time and Burst Time for Process Process Number %d :",count+1); 
+    scanf("%d",&at[count]); 
+    scanf("%d",&bt[count]); 
+    rt[count]=bt[count]; 
+  } 
+  printf("Enter Time Quantum:\t"); 
+  scanf("%d",&time_quantum); 
+  printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n"); 
+  for(time=0,count=0;remain!=0;) 
+  { 
+    if(rt[count]<=time_quantum && rt[count]>0) 
+    { 
+      time+=rt[count]; 
+      rt[count]=0; 
+      flag=1; 
+    } 
+    else if(rt[count]>0) 
+    { 
+      rt[count]-=time_quantum; 
+      time+=time_quantum; 
+    } 
+    if(rt[count]==0 && flag==1) 
+    { 
+      remain--; 
+      printf("P[%d]\t|\t%d\t|\t%d\n",count+1,time-at[count],time-at[count]-bt[count]); 
+      wait_time+=time-at[count]-bt[count]; 
+      turnaround_time+=time-at[count]; 
+      flag=0; 
+    } 
+    if(count==n-1) 
+      count=0; 
+    else if(at[count+1]<=time) 
+      count++; 
+    else 
+      count=0; 
+  } 
+  printf("\nAverage Waiting Time= %f\n",wait_time*1.0/n); 
+  printf("Avg Turnaround Time = %f",turnaround_time*1.0/n); 
+  
+  return 0; 
 }
