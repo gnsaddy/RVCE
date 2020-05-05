@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json">
+
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn bg-transparent btn-animation btn-col" id="btn">Dark</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="container">
+            <div class="card card-body card-col ">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <input type="text" id="userid" name="id" class="form-control card-header-col"
+                                placeholder="Enter GitHub User ID" required autofocus>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <button class="btn rounded text-danger font-weight-bold bt" id="fetch_details">
+                                Fetch User Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card card-col">
+                    <div class="card-body card-body-col">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <img alt="logo" src="https://avatars1.githubusercontent.com/u/9919?s=200&v=4"
+                                    class="img-fluid" height="150" width="150" id="gimg" />
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 text-justify card-body-col">
+                                <br>
+
+                                <p> User Id : <span class="font-weight-bold text-danger" id="gid">GitHub</span></p>
+                                <br>
+                                <p>Name &nbsp; : <span class="font-weight-bold text-danger" id="gname">GitHub</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card card-body card-col card-body-col" >
+                            <h5 class="card-body-col">
+                                <p> Profile : <span id="profile" class="text-danger"></span>
+                                    <a id="pro"><i class="fas fa-external-link-alt"></i> </a>
+                                </p>
+                            </h5>
+                            <h5 class="card-body-col">
+                                <p> Location : <span id="location" class="text-danger">Location</span>
+                                </p>
+                            </h5>
+                            <h5 class="card-body-col">
+                                <p> Bio : <span id="bio" class="text-danger">Bio</span>
+                                </p>
+                            </h5>
+                            <h5 class="card-body-col">
+                                <p> Company : <span id="company" class="text-danger">Company</span>
+                                </p>
+                            </h5>
+                            <h5 class="card-body-col">
+                                <p> Created at : <span id="created" class="text-danger">Company</span>
+                                </p>
+                            </h5>
+                            <h5 class="card-body-col">
+                                <p> Updated at : <span id="updated" class="text-danger">Company</span>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="container" style="margin-top: 2% !important; ">
+            <div class="card card-body">
+                <button class="bt btn-primary font-weight-bold" id="allData">Fetch All Data</button>
+            </div>
+        </div> -->
+        <br>
+    </main>
+
+    <script src="css/bootstrap4/js/jquery-min.js"></script>
+    <script src="css/bootstrap4/js/bootstrap.js"></script>
+    <script src="css/bootstrap4/js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

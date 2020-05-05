@@ -1,0 +1,24 @@
+{
+  "name": "fetch_github_profile",
+  "version": "1.1.1",
+  "description": "Fetching github particular details using Github API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "http-server": "0.12.1",
+    "json": "9.0.6",
+    "express": "4.17.1"
+  },
+  "keywords": [
+    "pwa",
+    "service-worker"
+  ],
+  "author": "Aditya Raj",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
