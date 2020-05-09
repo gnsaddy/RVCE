@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/style.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center"><u>Stock Inventory</u></h4>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <table class="table table-bordered table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">#id</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Add Stock</th>
+                                    <th scope="col">Remove Stock</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="one"></td>
+                                    <td id="two"></td>
+                                    <td id="three"></td>
+                                    <td><input type="text" id="four" class="form-control"></td>
+                                    <td><input type="text" id="five" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                            <!-- here goes our data! -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </main>
+
+
+
+    <script src="./bootstrap/js/jquery-min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/popper.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

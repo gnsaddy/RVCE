@@ -16,17 +16,18 @@ int place(int pos){
 
 void print(int n){
 	int i,j;
-	count++;
-	printf("\nSolution #%d \n",count);
 	for(i=1;i<=n;i++){
 		for(j=1;j<=n;j++){
 			if(a[i]==j)
-				printf("Q\t");
+				printf("1 ");
 			else
-				printf("*\t");
+				printf("0 ");
 		}
 		printf("\n");
 	}printf("\n");
+	if (n > 2)
+		exit(0);
+	
 }
 
 
@@ -50,15 +51,18 @@ void queen(int n){
 		else
 			k--;
 	}
+	if (n==1)
+		printf("Trivial Solution");
+	if(n==2 || n==3)
+		printf("No solution");
+	
 }
 
 void main(){
 	int n;
-	printf("\nEnter the number of queen : ");
 	scanf("%d",&n);
-
 	queen(n);
-	printf("\nTotal solution %d \n",count);
+	
 }
 
 
