@@ -17,18 +17,12 @@ function generateTable(tbody, data) {
 
 		let row = tbody.insertRow(); // tr
 		console.log(row);
-		for (let i = 0; i < 6; i++) {
-			let row = document.getElementById('one');
-			row.innerHTML = element.pid;
-		}
 
 		for (key in element) {
 			let cell = row.insertCell(); // td
 			// console.log(cell);
 			let text = document.createTextNode(element[key]);
 			cell.appendChild(text);
-			let textNext = document.createTextNode();
-			cell.appendChild(textNext);
 		}
 	}
 }
