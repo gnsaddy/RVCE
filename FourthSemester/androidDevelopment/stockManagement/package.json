@@ -8,7 +8,9 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "bootstrap": "4.4.1",
     "express": "4.17.1",
+    "fs-es6": "0.0.2",
     "nodemon": "2.0.3"
   },
   "keywords": [

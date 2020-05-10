@@ -7,6 +7,9 @@
     <title>Stock</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
 </head>
 
 <body>
@@ -30,36 +33,29 @@
         </nav>
 
 
-        <div class="container-fluid mt-5">
+        <div class="container-fluid mt-5 mb-5">
             <div class="card">
                 <div class="card-header">
                     <h4 class="text-center"><u>Stock Inventory</u></h4>
                 </div>
-                <div class="card-body">
-                    <div class="container-fluid">
-                        <table class="table table-bordered table-hover">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">#id</th>
-                                    <th scope="col">Product Name</th>
-                                    <th scope="col">Stock</th>
-                                    <th scope="col">Add Stock</th>
-                                    <th scope="col">Remove Stock</th>
+                <div class="container-fluid mx-auto mt-3">
+                    <table
+                        class="table table-bordered table-hover table-responsive-lg table-responsive-md table-responsive-sm">
+                        <thead class="thead-dark text-center">
+                            <tr>
+                                <th scope="col">#id</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Add Stock</th>
+                                <th scope="col">Remove Stock</th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td id="one"></td>
-                                    <td id="two"></td>
-                                    <td id="three"></td>
-                                    <td><input type="text" id="four" class="form-control"></td>
-                                    <td><input type="text" id="five" class="form-control"></td>
-                                </tr>
-                            </tbody>
-                            <!-- here goes our data! -->
-                        </table>
-                    </div>
+                            </tr>
+                        </thead>
+                        <tbody class="m-auto text-center">
+
+                        </tbody>
+                        <!-- here goes our data! -->
+                    </table>
                 </div>
             </div>
         </div>
