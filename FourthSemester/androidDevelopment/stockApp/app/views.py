@@ -1,4 +1,3 @@
-from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
 
@@ -25,7 +24,6 @@ class Insert(TemplateView):
 
 
 class Update(TemplateView):
-
     def get(self, request, *args, **kwargs):
         stock_id = request.GET['stockid']
         quantity = request.GET['st']
