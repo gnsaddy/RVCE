@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock App</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="manifest" href="{% static 'manifest.json' %}">
+</head>
+<body>
+<main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center font-weight-bolder">
+        <a class="navbar-brand text-center" href="#">Stock Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link" href="{% url 'index' %}">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'display' %}">Display </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="container mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="text-center font-weight-bolder">Stock Data Display</h5>
+            </div>
+            <div class="container-fluid mx-auto mt-3">
+                <table class="table table-bordered table-hover table-responsive-lg table-responsive-md table-responsive-sm">
+                    <thead class="thead-dark text-center">
+                    <tr>
+                        <th>Stock ID</th>
+                        <th>Stock Name</th>
+                        <th>Quantity</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="m-auto text-center">
+                    {% for data in shelf %}
+                        <tr>
+                            <td>{{ data.sid }}</td>
+                            <td>{{ data.sname }}</td>
+                            <td>{{ data.quant }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</main>
+
+
+<script src="{% static 'bootstrap/js/jquery-min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+<script src="{% static 'bootstrap/js/tooltip.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+</body>
+</html>
+

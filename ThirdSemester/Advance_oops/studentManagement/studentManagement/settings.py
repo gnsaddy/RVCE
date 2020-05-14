@@ -80,9 +80,9 @@ DATABASES = {
             'ENGINE': 'django.db.backends.̥mysql',
             'NAME': 'dataflair',
             'USER': 'root',
-            'PASSWORD': “”,
-            'HOST': “”,
-            'PORT': “”,
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
             'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" }
                 }
         }
