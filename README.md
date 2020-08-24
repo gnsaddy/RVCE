@@ -1,1 +1,1 @@
-RVCE
+RV college of Engineering 
